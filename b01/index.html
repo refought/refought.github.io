@@ -1,0 +1,76 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Refought · Rome Won This Battle. Run It Again and It Might Not. · Sources</title>
+<style>
+:root{--bg:#f5f4f1;--fg:#1d1f22;--soluk:#5b5f66;--cizgi:#d9d6cf;--vurgu:#9a6b1f}
+@media (prefers-color-scheme:dark){:root{--bg:#16181b;--fg:#e6e3dc;--soluk:#9a9ea6;--cizgi:#2c2f34;--vurgu:#d6a650}}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Inter,sans-serif}
+main{max-width:720px;margin:0 auto;padding:40px max(16px,env(safe-area-inset-left)) 80px}
+h1{font-size:1.6rem;line-height:1.25;margin:0 0 4px;text-wrap:balance} .ust{color:var(--soluk);margin:0 0 32px}
+h2{font-size:.8rem;letter-spacing:.08em;color:var(--vurgu);margin:36px 0 8px;border-top:1px solid var(--cizgi);padding-top:20px}
+li{margin:4px 0} .bolum{margin:2px 0;font-variant-numeric:tabular-nums} a{color:var(--vurgu)}
+code{font-size:.9em}
+</style></head><body><main>
+<h1>Rome Won This Battle. Run It Again and It Might Not.</h1>
+<p class="ust">Refought · sources, parameters and the full run log for this episode</p>
+<p>In 340 BC Rome beat an army almost exactly like its own. What decided it: the general, as Livy reports, or a coin?</p>
+<p>We didn&#x27;t rebuild the battle. We built two armies alike in the ways Livy describes, made them identical on purpose, and fought them 1,000 times on a table. Then we changed one rule at a time.</p>
+<h2>WHAT WE DID</h2>
+<p>Livy (8.10.8) reports that those who handed down the battle agreed: whichever side had Titus Manlius would have won.</p>
+<p>Our table is an agent-based model: every soldier is a piece. He tires at the front and rests behind it. An army breaks when half its men have fallen or run. Each main rule gets 1,000 battles.</p>
+<p>WHAT CAME OUT (on our table, not in 340 BC)</p>
+<ul>
+<li>Identical armies, no rule changed: 497 to 503. With identical sides, a near-even split is what a fair table should give. It&#x27;s our check, not our finding.</li>
+<li>Only Rome may swap its tired front line for a fresh one: Rome wins 86% of decided battles, and still loses about 1 in 7.</li>
+<li>Both armies get that rule: 511 to 489.</li>
+<li>The general&#x27;s call, when to send in the last line: 15 minutes before the enemy, 15 after, 45 after. All three stayed too close to a coin flip to tell apart. Waiting as Livy says Manlius did gained nothing we could see. Holding the last line back until the front broke lost almost every time (see limit 5).</li>
+<li>One minute later than the enemy cost Rome about 8 battles in 100 (range 4 to 12), against both last lines going in together. Mid-range settings only. We expected no effect.</li>
+<li>30 minutes early or 75 late cost Rome about 17 and 19 battles in 100 (mid-range settings only).</li>
+<li>New dice with under 20 minutes left changed the winner in 29% of re-rolls (range 26 to 33%).</li>
+<li>At every setting we tried, the one-sided rule still won (66 to 94%) and late dice still turned more than a quarter of battles.</li>
+<li>One marked piece in Rome&#x27;s second line was still standing at the end in 554 of 1,000 battles with no rule, 93 when only his side had the rule, 40 when both did.</li>
+</ul>
+<h2>CHAPTERS</h2>
+<p class="bolum">0:00 Rome against its twin</p>
+<p class="bolum">1:16 The table: three lines, three rules</p>
+<p class="bolum">1:50 No rule changed: battle 87</p>
+<p class="bolum">2:25 Switch one: tired men for fresh</p>
+<p class="bolum">3:11 Why it wins, and what it costs one man</p>
+<p class="bolum">3:55 Both armies get the rule</p>
+<p class="bolum">4:26 The general&#x27;s call: when to send the last line</p>
+<p class="bolum">5:44 Orders or dice?</p>
+<p class="bolum">6:56 Rewinding the last twenty minutes</p>
+<p class="bolum">7:45 What if our guesses are wrong?</p>
+<p class="bolum">8:20 What our table can&#x27;t know</p>
+<p class="bolum">8:50 The general, or the coin?</p>
+<h2>WHAT OUR TABLE CAN&#x27;T KNOW</h2>
+<ol>
+<li>How often a real battle between equals could have gone the other way. Our table only shows how often it does on the table.</li>
+<li>Our general makes one call: when to send in the last line. The dice roll every moment, so this test favours the coin.</li>
+<li>Our general sees exactly how tired the enemy&#x27;s last line is. A real general could only estimate it.</li>
+<li>In Livy (8.8.12-13), the last line takes the retreating men into its gaps, closes ranks and charges as one line. Ours takes them in behind and leaves the gaps open.</li>
+<li>Our front lines can&#x27;t fall back in order. Keep that in mind for the &quot;held back&quot; result.</li>
+<li>How long a man can fight (we assume 8 minutes, tested 2 to 15) and how fast a unit breaks are our guesses.</li>
+<li>One minute late was measured only with Rome late and mid-range settings. An earlier version of our table ran the mirror and the extremes; we have not re-run them.</li>
+<li>Why it costs is our guess, not traced. We think our rule for who fights first sets its size. We changed that rule once, to close a gap, never to get a number.</li>
+<li>Not on our table: Manlius&#x27;s courage and judgment (Livy 8.10.8), Decius&#x27;s self-sacrifice (8.9), the Latins&#x27; misreading (8.10.3), light troops, the reserve&#x27;s effect on morale.</li>
+<li>Livy wrote about three centuries after the battle.</li>
+</ol>
+<h2>METHOD</h2>
+<p>Run v1.1, engine e88d40f. 35,400 battles: 18 rule sets x 1,000, 14 sets x 500 for the re-rolled dice, and 52 sets x 200 at the extremes of our two guesses. Written down before the run: what we measure, how many battles, the dice seeds, and the thresholds for each verdict (a last-line timing &quot;wins&quot; or &quot;loses&quot; only if it moves Rome&#x27;s share by 10 points on the same dice seeds; one minute late fell short of that bar, but its range excludes zero). After the first full run we found a gap in the last-line rule (limit 8). We fixed it and re-ran all 35,400 under the same plan. Only the second run is on screen.</p>
+<h2>SOURCES</h2>
+<ul>
+<li>Livy, Ab Urbe Condita 8.6-8.10. Latin: ed. Weissenborn and Müller (Teubner), via Perseus; section numbers as there. English: Canon Roberts (1912).</li>
+<li>Philip Sabin, &quot;The Face of Roman Battle&quot;, Journal of Roman Studies 90 (2000), pp. 1-17, doi:10.2307/300198. Our tire-and-rest rules draw on his argument. The numbers in them are ours.</li>
+</ul>
+<h2>VISUALS</h2>
+<p>Cinematic scenes are AI-generated reconstructions, labelled &quot;reconstruction&quot; on screen. The table is our own model. The 3D close-ups replay moments from its battles and carry the same label.</p>
+<p>Tell us which rule to change next.</p>
+<h2>FILES</h2>
+<p>Every battle we ran for this episode, one row each. Columns: rule set, dice seed, winner, battle length and timings in seconds of battle time,
+men fallen and fled per side, and how the marked piece (Rome's second line) ended. Set names (d0, r45 …) are those of our run plans. The parameter files are the locked run plans as written before the run (field names in Turkish, our working language).</p>
+<ul>
+<li><a href="runs-main.csv">runs-main.csv</a> · Main rule sets, 18 x 1,000 battles (18,000 rows) · <a href="runs-main-parameters.json">parameters</a></li>
+<li><a href="runs-rerolls.csv">runs-rerolls.csv</a> · Re-rolled dice, 14 x 500 battles (7,000 rows) · <a href="runs-rerolls-parameters.json">parameters</a></li>
+<li><a href="runs-sensitivity.csv">runs-sensitivity.csv</a> · Extremes of our two guesses, 52 x 200 battles (10,400 rows) · <a href="runs-sensitivity-parameters.json">parameters</a></li>
+</ul>
+</main></body></html>

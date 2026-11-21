@@ -1,0 +1,1384 @@
+{
+ "bolum": "b01-es-ordular",
+ "mekanizma": "eş ordularda üstünlüğün kaynağı: yorgun ön safın taze hatla değişimi (pilot v3.1 mekanizması, Sabin 2000 s. 7 hipotezi; Livius 8.8.9) ve son hattın (triarii) ne zaman sürüldüğü (Livius 8.8.11-13, 8.10.2-4); doruk: aynı muharebede T. dakikadan sonra zar yeniden atılınca kazanan ne sıklıkla değişir",
+ "kural_cumlesi": "Üç şalter ve bir zar: (1) SWAP TIRED LINES yalnız Roma (D1; pilot v3.1 kural cümlesi aynen geçerli); (2) iki taraf da değiştirir, karar eşzamanlı (D2; model seçimi, TASARIM §2.9); (3) son hattı sür: emir anında her gruptaki triarii önce boş aralık şeridine yana kayar, o şeritte ön birliğin arkasına ilerler, ön birliğin ilk dinlenmesinde onunla yer değiştirir; önünde henüz öne geçmemiş hat varsa bekler; emir yoksa triarii yalnız önündekiler çözülünce girer (D3). 'Sürmek' modelde son hatla hat değişimidir: kurulabilen yaklaşık, Livius'un okuması değil; Livius'ta (8.8.12-13, 8.10.5) son hat öndekileri aralıklarına alır, aralıkları kapatır ve tek, daha büyük bir hat olarak saldırır; modelde son hat tek başına ve değiştirdiği hattan sığ girer, baskın ve korku etkisi yok, giriş saatle (OLGU-D3.md #1, 16 Kas); (3a) Livius'un iki kaldıracı (16 Kas, D3-KALDIRAC.md): birleşik son hat (bicim 'birlesik'): bildik değişim bitince çekilen ön birlik ve dinlenmiş hat triarii'nin dosyalarına arka sıra olarak katılır, tek derin birlik (önde taze triarii; bütünlük üyelerin kayıp paylarının ağırlıklı ortalaması; aralıklar açık kalır; korku etkisi yok); düşmana göre salma (dusman E_alti 0,5): düşmanın son hattı dövüşe girip ön safının yorgunluk ortalaması 0,5'in altına inince bütün triarii'ye aynı anda emir (Livius 8.10.3-4; yanılgı ve accensi yok); (4) zar: T anına dek aynı muharebe, sonra yeni rastgele akış (DŞ; kural değil, deney aracı). Hipotez (Livius 8.10.7-8): eş ordularda sonucu komutan belirler.",
+ "cerceve": "Veseris (MÖ 340) esinli eşit ordular testi; muharebenin yeniden kurgusu değil (kurucu R7 c). Livius (8.6.15, 8.8.15) iki ordunun aynı silah ve düzende savaştığını söyler; ordu tarifi üç yüzyıl sonra yazılmış ve tartışmalıdır (Sabin 2000 s. 7 'anachronistically early'). Her taraf 1.200: hastati 4 manipulus, principes 4, triarii 4 (sayılar Polybius 6.21 oranlarından hesap; 20 × 6 ve 20 × 3 dizilişi Veith 1928 s. 357 'wahrscheinlich', C). Dama tahtası: principes aralıkların arkasında (Polybius 15.9.7 'usual custom', Veith s. 357), aralık = manipulus cephesi 18 m (Veith s. 357, C); triarii hizası modern çizim; triarii son yedek, dönüşe girmez (Livius 8.8.11 'rem ad triarios redisse': son yedek anlamında). Adam başı 0,9 m (Veith temel duruş s. 352; Vegetius 3.14), sıra 1,8 m (Vegetius 3.15, MS 4. yy). İki taraf pilum atar (Polybius 6.23.8, MÖ 2. yy; MÖ 340 için tahmin), kimse itmez. Başarısızlıkta: modelde öndeki çözülünce arkadaki onun şeridine yana kayıp ilerler (yorum ve model seçimi; Livius 8.8.9'da öndeki düzenli çekilir, arkadaki dövüşü alır). Hafif ve yardımcı piyade yok (Livius'un hafif askerleri, rorarii, accensi), süvari yok, arazi düz (Vezüv eteği değil). Şalterler kollara göre: D0 kimse değiştirmez (simetrik), D1 yalnız Roma, D2 ve D3 iki taraf. Livius 8.10.2-3'teki yanılgı (accensi, Latinlerin \"son hatta varıldı\" sanması), Decius'un adanması ve yedeğin moral değeri modelde yok.",
+ "model_surumu": "v3.1 + b01 fizibilite bayrakları (motor 209badc, kos.mjs a631408; TASARIM §2.9) + D3 kaldıraçları (motor 990268c, TASARIM §2.10; varsayılan kapalı, kapalıyken v3.1 birebir). Motor kilitten sonra değişmez; koşu git_sha kaydeder.",
+ "yazildi": "2026-11-16",
+ "not": "DENEY PLANI (ANAYASA 8): koşudan önce git'e girer; kos.mjs git_sha ve plan_kirli yazar. Parametre değerleri, aralıkları, birlikler ve kural parametreleri pilot v3.1 ile aynı; değişenler yalnız: t_max_s 3 → 6 saat (durdurma kuralı), iki ölçü bayrağı (olcu_iki_taraf, isaretli; sonuca dokunmaz) ve kollar. Tohum kökü pilotla aynı: her kolun ilk 500 tohumu pilotun 500 muharebesi; D0 ve D1'in 3 saatten önce biten satırları pilotla birebir olmalı (kontrol noktası). Sayıya bakıp kol, nokta ya da eşik eklenmez; sonradan değişen her şey plan sürümünü artırır ve nedenini yazar.",
+ "parametreler": {
+  "dt_s": 0.2,
+  "t_max_s": {
+   "deger": 21600,
+   "etiket": "durdurma kuralı, model parametresi değil (DENEY-PLANI §6.3): 6 saat. Pilot v3.1'de 3 saatti; alt uçlarda (T_dayanma 2, a_birlik 3) koşuların yarısı 3 saatte kararsızdı (FIZIBILITE §3a), DŞ bitiş anı ister (§4a: 6 saatte 3.500 koşunun hiçbiri kararsız kalmadı, en uzunu 5 sa 3 dk). 3 saatten önce biten her koşu pilotla birebir."
+  },
+  "T_dayanma_dk": {
+   "deger": 8,
+   "aralik": [
+    2,
+    15
+   ],
+   "kaynak": "LS-25",
+   "etiket": "tahmin (ölçüm yok; LS-25: Sabin 2000 s. 10, saatler süren sürekli düello 'hayal edilemez'; ekranda tırnaklı alıntı yok)"
+  },
+  "T_toparlanma_dk": {
+   "deger": 15,
+   "aralik": [
+    5,
+    30
+   ],
+   "kaynak": "LS-26",
+   "etiket": "tahmin"
+  },
+  "T_dovus_s": {
+   "ort": 45,
+   "sd": 20,
+   "kaynak": "LS-23",
+   "etiket": "tahmin, kalibre (Sabin: 'kısa ve yerel' patlama; sayı yok; S16a bantta)"
+  },
+  "T_dinlenme_s": {
+   "ort": 90,
+   "sd": 45,
+   "aralik": [
+    {
+     "ort": 60,
+     "sd": 30
+    },
+    {
+     "ort": 300,
+     "sd": 150
+    }
+   ],
+   "kaynak": "LS-24",
+   "etiket": "tahmin, kalibre (Sabin: emniyet mesafesi; süre yok; duyarlılıkta 60-300 s)"
+  },
+  "lambda_vurus_1s": {
+   "deger": 0.2,
+   "aralik": [
+    0.2,
+    1
+   ],
+   "kaynak": "LS-20",
+   "etiket": "tahmin (Sabin dn. 45: 5 sn'de bir vuruş varsayımı)"
+  },
+  "p_isabet": {
+   "deger": 0.03,
+   "aralik": [
+    0.015,
+    0.045
+   ],
+   "kaynak": "LS-21",
+   "etiket": "tahmin, kalibre (saldırı başına ölüm 0,03 × 0,2 = %0,6 < Sabin dn. 45 %1)"
+  },
+  "p_olum": {
+   "deger": 0.2,
+   "aralik": [
+    0.1,
+    0.4
+   ],
+   "kaynak": "LS-22",
+   "etiket": "tahmin"
+  },
+  "pilum_R_m": {
+   "deger": 20,
+   "aralik": [
+    15,
+    25
+   ],
+   "kaynak": "LS-12",
+   "etiket": "ölçüm (Tod's Workshop: mail + scutum atış 20-25 m, isabet 15-20 m; tek atıcı, video); replika Polybius tipi, MÖ 340 pilumunun biçimi bilinmiyor"
+  },
+  "pilum_p_isabet": {
+   "deger": 0.06,
+   "aralik": [
+    0.03,
+    0.12
+   ],
+   "kaynak": "LS-14",
+   "etiket": "tahmin"
+  },
+  "a_birlik": {
+   "deger": 4,
+   "aralik": [
+    3,
+    6
+   ],
+   "kaynak": "LS-40, LS-47",
+   "etiket": "tahmin, kalibre"
+  },
+  "a_kayip": 1,
+  "e_bulasma": 1,
+  "yara_M": 0.01,
+  "r_moral_1s": 0.001,
+  "b_yorgun_1s": 0.0005,
+  "d_yan_1s": 0.001,
+  "M_bozgun": {
+   "deger": 0.2,
+   "aralik": [
+    0.15,
+    0.3
+   ],
+   "kaynak": "LS-43",
+   "etiket": "tahmin"
+  },
+  "q_taraf": {
+   "deger": 0.5,
+   "aralik": [
+    0.4,
+    0.6
+   ],
+   "kaynak": "LS-47",
+   "etiket": "tahmin (Sabin 2000 s. 5 sonuç bandından türetildi; LS-47 \"ölü + esir\" der, model \"düşen + kaçan\"ı durdurma eşiği yapar)"
+  },
+  "v_yuru_ms": {
+   "deger": 1.2,
+   "aralik": [
+    0.8,
+    1.5
+   ],
+   "kaynak": "LS-10, LS-17",
+   "etiket": "tahmin (Vegetius marş hızı ve Askew 15. yy zırh ölçümü; muharebe ilerleyişi değil)"
+  },
+  "cokunce_ilerle": true,
+  "yana_devral": {
+   "deger": true,
+   "kaynak": "TASARIM §2.8; Livius 8.8.9 ('in intervalla ordinum principes recipiebant. tum principum pugna erat'); ITIRAZCI-V3 #2, #3, #6",
+   "etiket": "model seçimi: öne geçen birlik çekilenin şeridine yana kayar ve izleyen düşmanı karşılar; yana kayma hiçbir kaynakta yok (modern okumalar arka hattı ileri yürütür: Veith s. 366, 368; Sabin s. 16); modelde kanat teması olmadığı için onun yerine geçer"
+  },
+  "kanat_siniri": {
+   "deger": true,
+   "kaynak": "Sabin 2000 s. 16 (arka birlikler aralığa girişi caydırır); Veith 1928 s. 359-360; karşı görüş Delbrück I³ s. 304, 457-458; kapsam: Veith s. 361 lejyona karşı lejyonu tartışmaz",
+   "etiket": "model seçimi: ilerleyen birlik bitişik düşman birliğin ön çizgisini geçmez (aralığa dalmaz); modelde kanat teması yok, dalış cezasız kalmasın diye yasak"
+  },
+  "kanat_m": 1,
+  "kayarken_temas_yok": {
+   "deger": true,
+   "kaynak": "TASARIM §2.8 \"v3.1 adayı\" ve \"v3.1 ve hız\"; çekirdek 9d0e24a, test T13",
+   "etiket": "model düzeltmesi (yapıntı giderme), parametre değil: yana kayan birlik (hedefCx dolu) ve karşısı kayma bitene dek yeni temas kurmaz; kayma bitince sonraki adımda kurulur. Kaymaya temasta başlayan birliğin cephesi bozulmaz (v3 planında yoklamada 0)"
+  },
+  "olcu_iki_taraf": {
+   "deger": true,
+   "etiket": "ölçü bayrağı: ön saf ölçüsü Latin için de (D2 'iki ön saf da X kat'); sonuca dokunmaz (FIZIBILITE §1)"
+  },
+  "isaretli": {
+   "deger": {
+    "birlik": "roma-principes-2",
+    "kol": 10,
+    "sira": 0
+   },
+   "etiket": "tek parça (KÜNYE §5): Roma principes-2, ön sıra, 11. dosya = ajan 610; sonuca dokunmaz (T17)"
+  }
+ },
+ "birlikler": [
+  {
+   "ad": "roma-hastati-1",
+   "taraf": 0,
+   "hat": 1,
+   "grup": 0,
+   "kol": 20,
+   "sira": 6,
+   "w_m": 0.9,
+   "d_m": 1.8,
+   "cx_m": -54,
+   "onY_m": 0,
+   "komut": "ilerle",
+   "pilum": 2
+  },
+  {
+   "ad": "roma-hastati-2",
+   "taraf": 0,
+   "hat": 1,
+   "grup": 1,
+   "kol": 20,
+   "sira": 6,
+   "w_m": 0.9,
+   "d_m": 1.8,
+   "cx_m": -18,
+   "onY_m": 0,
+   "komut": "ilerle",
+   "pilum": 2
+  },
+  {
+   "ad": "roma-hastati-3",
+   "taraf": 0,
+   "hat": 1,
+   "grup": 2,
+   "kol": 20,
+   "sira": 6,
+   "w_m": 0.9,
+   "d_m": 1.8,
+   "cx_m": 18,
+   "onY_m": 0,
+   "komut": "ilerle",
+   "pilum": 2
+  },
+  {
+   "ad": "roma-hastati-4",
+   "taraf": 0,
+   "hat": 1,
+   "grup": 3,
+   "kol": 20,
+   "sira": 6,
+   "w_m": 0.9,
+   "d_m": 1.8,
+   "cx_m": 54,
+   "onY_m": 0,
+   "komut": "ilerle",
+   "pilum": 2
+  },
+  {
+   "ad": "roma-principes-1",
+   "taraf": 0,
+   "hat": 2,
+   "grup": 0,
+   "kol": 20,
+   "sira": 6,
+   "w_m": 0.9,
+   "d_m": 1.8,
+   "cx_m": -36,
+   "onY_m": -24,
+   "komut": "takip",
+   "pilum": 2
+  },
+  {
+   "ad": "roma-principes-2",
+   "taraf": 0,
+   "hat": 2,
+   "grup": 1,
+   "kol": 20,
+   "sira": 6,
+   "w_m": 0.9,
+   "d_m": 1.8,
+   "cx_m": 0,
+   "onY_m": -24,
+   "komut": "takip",
+   "pilum": 2
+  },
+  {
+   "ad": "roma-principes-3",
+   "taraf": 0,
+   "hat": 2,
+   "grup": 2,
+   "kol": 20,
+   "sira": 6,
+   "w_m": 0.9,
+   "d_m": 1.8,
+   "cx_m": 36,
+   "onY_m": -24,
+   "komut": "takip",
+   "pilum": 2
+  },
+  {
+   "ad": "roma-principes-4",
+   "taraf": 0,
+   "hat": 2,
+   "grup": 3,
+   "kol": 20,
+   "sira": 6,
+   "w_m": 0.9,
+   "d_m": 1.8,
+   "cx_m": 72,
+   "onY_m": -24,
+   "komut": "takip",
+   "pilum": 2
+  },
+  {
+   "ad": "roma-triarii-1",
+   "taraf": 0,
+   "hat": 3,
+   "grup": 0,
+   "kol": 20,
+   "sira": 3,
+   "w_m": 0.9,
+   "d_m": 1.8,
+   "cx_m": -54,
+   "onY_m": -48,
+   "komut": "takip",
+   "pilum": 0,
+   "yedek": true
+  },
+  {
+   "ad": "roma-triarii-2",
+   "taraf": 0,
+   "hat": 3,
+   "grup": 1,
+   "kol": 20,
+   "sira": 3,
+   "w_m": 0.9,
+   "d_m": 1.8,
+   "cx_m": -18,
+   "onY_m": -48,
+   "komut": "takip",
+   "pilum": 0,
+   "yedek": true
+  },
+  {
+   "ad": "roma-triarii-3",
+   "taraf": 0,
+   "hat": 3,
+   "grup": 2,
+   "kol": 20,
+   "sira": 3,
+   "w_m": 0.9,
+   "d_m": 1.8,
+   "cx_m": 18,
+   "onY_m": -48,
+   "komut": "takip",
+   "pilum": 0,
+   "yedek": true
+  },
+  {
+   "ad": "roma-triarii-4",
+   "taraf": 0,
+   "hat": 3,
+   "grup": 3,
+   "kol": 20,
+   "sira": 3,
+   "w_m": 0.9,
+   "d_m": 1.8,
+   "cx_m": 54,
+   "onY_m": -48,
+   "komut": "takip",
+   "pilum": 0,
+   "yedek": true
+  },
+  {
+   "ad": "latin-hastati-1",
+   "taraf": 1,
+   "hat": 1,
+   "grup": 0,
+   "kol": 20,
+   "sira": 6,
+   "w_m": 0.9,
+   "d_m": 1.8,
+   "cx_m": -54,
+   "onY_m": 60,
+   "komut": "ilerle",
+   "pilum": 2
+  },
+  {
+   "ad": "latin-hastati-2",
+   "taraf": 1,
+   "hat": 1,
+   "grup": 1,
+   "kol": 20,
+   "sira": 6,
+   "w_m": 0.9,
+   "d_m": 1.8,
+   "cx_m": -18,
+   "onY_m": 60,
+   "komut": "ilerle",
+   "pilum": 2
+  },
+  {
+   "ad": "latin-hastati-3",
+   "taraf": 1,
+   "hat": 1,
+   "grup": 2,
+   "kol": 20,
+   "sira": 6,
+   "w_m": 0.9,
+   "d_m": 1.8,
+   "cx_m": 18,
+   "onY_m": 60,
+   "komut": "ilerle",
+   "pilum": 2
+  },
+  {
+   "ad": "latin-hastati-4",
+   "taraf": 1,
+   "hat": 1,
+   "grup": 3,
+   "kol": 20,
+   "sira": 6,
+   "w_m": 0.9,
+   "d_m": 1.8,
+   "cx_m": 54,
+   "onY_m": 60,
+   "komut": "ilerle",
+   "pilum": 2
+  },
+  {
+   "ad": "latin-principes-1",
+   "taraf": 1,
+   "hat": 2,
+   "grup": 0,
+   "kol": 20,
+   "sira": 6,
+   "w_m": 0.9,
+   "d_m": 1.8,
+   "cx_m": -36,
+   "onY_m": 84,
+   "komut": "takip",
+   "pilum": 2
+  },
+  {
+   "ad": "latin-principes-2",
+   "taraf": 1,
+   "hat": 2,
+   "grup": 1,
+   "kol": 20,
+   "sira": 6,
+   "w_m": 0.9,
+   "d_m": 1.8,
+   "cx_m": 0,
+   "onY_m": 84,
+   "komut": "takip",
+   "pilum": 2
+  },
+  {
+   "ad": "latin-principes-3",
+   "taraf": 1,
+   "hat": 2,
+   "grup": 2,
+   "kol": 20,
+   "sira": 6,
+   "w_m": 0.9,
+   "d_m": 1.8,
+   "cx_m": 36,
+   "onY_m": 84,
+   "komut": "takip",
+   "pilum": 2
+  },
+  {
+   "ad": "latin-principes-4",
+   "taraf": 1,
+   "hat": 2,
+   "grup": 3,
+   "kol": 20,
+   "sira": 6,
+   "w_m": 0.9,
+   "d_m": 1.8,
+   "cx_m": 72,
+   "onY_m": 84,
+   "komut": "takip",
+   "pilum": 2
+  },
+  {
+   "ad": "latin-triarii-1",
+   "taraf": 1,
+   "hat": 3,
+   "grup": 0,
+   "kol": 20,
+   "sira": 3,
+   "w_m": 0.9,
+   "d_m": 1.8,
+   "cx_m": -54,
+   "onY_m": 108,
+   "komut": "takip",
+   "pilum": 0,
+   "yedek": true
+  },
+  {
+   "ad": "latin-triarii-2",
+   "taraf": 1,
+   "hat": 3,
+   "grup": 1,
+   "kol": 20,
+   "sira": 3,
+   "w_m": 0.9,
+   "d_m": 1.8,
+   "cx_m": -18,
+   "onY_m": 108,
+   "komut": "takip",
+   "pilum": 0,
+   "yedek": true
+  },
+  {
+   "ad": "latin-triarii-3",
+   "taraf": 1,
+   "hat": 3,
+   "grup": 2,
+   "kol": 20,
+   "sira": 3,
+   "w_m": 0.9,
+   "d_m": 1.8,
+   "cx_m": 18,
+   "onY_m": 108,
+   "komut": "takip",
+   "pilum": 0,
+   "yedek": true
+  },
+  {
+   "ad": "latin-triarii-4",
+   "taraf": 1,
+   "hat": 3,
+   "grup": 3,
+   "kol": 20,
+   "sira": 3,
+   "w_m": 0.9,
+   "d_m": 1.8,
+   "cx_m": 54,
+   "onY_m": 108,
+   "komut": "takip",
+   "pilum": 0,
+   "yedek": true
+  }
+ ],
+ "kural": {
+  "modul": "hat-degisimi",
+  "parametreler": {
+   "E_degisim": {
+    "deger": 0.5,
+    "aralik": [
+     0.3,
+     0.7
+    ],
+    "kaynak": "LS-33",
+    "etiket": "tahmin"
+   },
+   "t_degisim_s": {
+    "deger": 60,
+    "aralik": [
+     20,
+     120
+    ],
+    "kaynak": "LS-33",
+    "etiket": "tahmin (Sabin s. 7: 'mümkün olmalı', süre yok)"
+   },
+   "bekleme_s": 120,
+   "yalnizDinlenmede": true,
+   "yenidenKullan": false,
+   "g_hat_m": {
+    "deger": 15,
+    "aralik": [
+     8,
+     30
+    ],
+    "kaynak": "Veith 1928 s. 357 (sayı vermez: aralıktan büyük, derinliğin birkaç katı)",
+    "etiket": "tahmin, duyarlılıkta"
+   },
+   "p_acik": {
+    "deger": 2,
+    "etiket": "değişimdeki askere vuruşta isabet çarpanı (tahmin); işleyip işlemediği koşuda `vurus_degisim` sayacıyla ölçülür (ITIRAZCI-V3 #7)"
+   },
+   "yedek_donus": false,
+   "geri_cizgi": true
+  },
+  "kapali": {
+   "acik": false
+  },
+  "acik": {
+   "acik": true
+  }
+ },
+ "olcu": {
+  "ad": "on_saf_tukenme_s",
+  "tanim": "Roma'nın temas hâlindeki ön saf askerlerinin yarısının gücü E_kritik (0,2) altına ilk indiği an: 'ön safın yarısı tükendi'. Oluşmazsa sansürlü (t_max). İkincil: cephe_cokus_s (ön saf ortalama E < 0,2), taraf_bozgun_s, kazanan, kayıp payları, degisim_sayisi. b01'in birincil sonucu 'kazanan' (bozulmayan taraf; aynı adımda iki taraf bozulursa ya da 6 saat dolarsa null). kos.mjs'in sonuc bloğundaki kazanma_payi_taraf0 BÜTÜNDE paydır; bölümün payları karar verilenlerde ve eşli ölçüler analiz betiğiyle (DENEY-PLANI §2) kosu*-sonuc.jsonl satırlarından tohumla eşlenerek hesaplanır.",
+  "birim": "s"
+ },
+ "durdurma": "bir tarafın (düşen + kaçan) payı q_taraf'ı (0,5) aşar ya da bütün birlikleri çözülür (kazanan öbür taraf; ikisi aynı adımda: kararsız), ya da t_max_s (6 saat: kararsız)",
+ "kosu_sayisi": 1000,
+ "tohum_kok": 20261110,
+ "kayit_adim": 1,
+ "itirazci": {
+  "durum": "D3 okuması DÜZELT (16 Kas, uretim/b01-es-ordular/OLGU-D3.md): plan dili işlendi (kural_cumlesi, ryok notu); ekran cümleleri ve kart metin aşamasında; kalan sorular DENEY-PLANI §9.1",
+  "pilot": "uretim/pilot-60/ITIRAZCI-V3.md (D0, D1 parametreleri)"
+ },
+ "kaynak_notu": "Hat değişimi şalteri: Livy 8.8 başarısızlık sonrası geri düşüşü anlatır, Zama'da (Polybius 15) geri çağrı ve yeniden dizilme vardır; dinlenmede yorgun hattın taze hatla değişimi Sabin 2000 s. 7 yorumuna (ve Appian BC 4.128'in geç Cumhuriyet tanıklığına) dayanan HİPOTEZDİR. Pilot bunun neye değeceğini sınar; kartta söylenir. D3'ün sürme geometrisi model seçimidir (Livius 8.8.11-13: triarii çekilenleri aralıklarından alır, aralıkları kapatır, tek kütle saldırır; modelde aralık kapatma yok).",
+ "kalibrasyon": {
+  "gunluk": "uretim/pilot-60/KALIBRASYON.md",
+  "secilen_set": "S16a",
+  "bantlar": {
+   "sure_sa": [
+    1,
+    5
+   ],
+   "galip_olu_ort": 0.05,
+   "maglup_olu_hoplit": [
+    0.1,
+    0.2
+   ],
+   "maglup_kayip_pay_roma": ">0.5"
+  },
+  "s16a_16_kosu_salter_kapali": {
+   "sure_p50_dk": 158.6,
+   "bitmeyen_3sa": 4,
+   "kazanan": {
+    "roma": 8,
+    "dusman": 4
+   },
+   "galip_olu_p50": 0.092,
+   "maglup_olu_p50": 0.155,
+   "dusman_kayip_pay": 0.53
+  },
+  "not": "galip ölüsü %9 ortalamanın (≈ %5) üstünde, Cannae (%11) bandında; düşman pilumsuz ve moralde eşit. Kalibrasyon bantlara göre yapıldı, ölçüye ya da şalter farkına göre değil.",
+  "v3_yoklama_32": {
+   "not": "v2 planı + v3 bayrakları, 32 tohum × 2 kol (11 Kas, scratch): süre p50 KAPALI 140 / AÇIK 133 dk; galip ölü %9,9 / %9,6; mağlup ölü %10,6 / %10,6; bantlar v2 ile aynı yerde. Ölçü KAPALI 834 / AÇIK 1.449 sn (1,74×) yalnız yön için; plan buna göre değiştirilmedi."
+  },
+  "v3_adil_taban": {
+   "not": "KAPALI kol 480 tohum (11 Kas, scratch, v3 bayrakları): Roma 221, Latin 228, karar yok 31 (%6,5, 3 sa tavanı); Roma payı %49,2 (z −0,33): adil taban tutar. 160 tohumdaki 86/66 gürültüydü."
+  }
+ },
+ "modelin_bilmedigi_adaylari": [
+  "principes devralmayı nasıl yaptı (yana kayma model seçimi; Livius anlatmaz)",
+  "taze hat kime karşı dövüştü (Livius 8.8.15 'hastati cum hastatis, principes cum principibus'; model: çekilenin rakibine)",
+  "aralığa giren birliğe ne olurdu (kanat teması modelde yok; model dalışı yasaklar)",
+  "aralığın karşısındaki düşman ne yaptı (Delbrück ↔ Veith)",
+  "bir adam kaç dakika dövüşür (LS-25)",
+  "Livius'un hafif askerleri, rorarii, accensi, süvari, Decius'un devotio'su, Samnitler ve Vezüv eteği modelde yok",
+  "gerçek bir eşitler muharebesinin ne sıklıkla tersine dönebileceği (masa yalnız masada ne sıklıkla döndüğünü gösterir; OLGU-PAKET A3)",
+  "Livius'un Roma'nın zaferini bağladıkları: Decius'un adanması, Manlius'un yedekleri yönetişi, Latinlerin hangi hatla karşılaştıkları konusundaki yanılgısı (OLGU-PAKET A4)",
+  "triarii'nin yaşı, deneyimi ve uzun mızrağı (modelde yalnız sığlığıyla farklı: 3 sıra, 60 kişi)",
+  "yedeğin varlığının moral değeri (arkada duran triarii önündekileri taşımaz, düşmanı caydırmaz)",
+  "komutanın gidişata tepkisi (masada kimse kötü giden kanadı desteklemez; emirler önceden yazılı)",
+  "karşı taraf son hattını 45. dakikada sürer, ne olursa olsun; Livius'ta Latinler bir Roma hamlesini yanlış okuyup sürdü (8.10.3; OLGU-D3 kart #5)",
+  "öndeki hatlar düzenle geri çekilemez: dayanır ya da çözülür (OLGU-D3 kart #2)",
+  "Livius'ta son hat öndekileri aralıklarına alır ve aralıkları kapatır; bizde arkasına alır, manipuluslar arası aralıklar açık kalır (D3-KALDIRAC §1.1)",
+  "düşmana göre salan komutan düşmanın yorgunluğunu tam görür ama yanılmaz ve yanıltılamaz; bizde bu fiilen düşmandan birkaç dakika sonra sürmek demek (kartta kilitli koşunun ates_s − izle_s ortancası)",
+  "büyük birleşik birliğin moral bütünlüğü üyelerinin ortalaması; çözülünce bütünü gider (masanın birlik kuralı; Livius'ta 'neredeyse dokunulmadan' kazanır, 8.10.6)"
+ ],
+ "plan_surumu": "b01 v1.1 (KİLİTLİ 17 Kas 2026: kurucu \"karar sende ideal şekilde ilerle\", MASA R30; son hat kapısı C ve şerit; DENEY-PLANI §v1.1)",
+ "grup": "A · ana kollar (D0, D1, D2, D3 taraması, emir-zar birimi, takas kontrolü)",
+ "grup_aciklama": "Bölümün manşet sayılarının çoğu: açılış ve kapak (d0), şalter 1 (d1), şalter 2 (d2), komutanın payı (r*), emir mi zar mı (r45, r45_T45_k1, r46, r60, r90, ryok), takas kontrolü (l15, lyok).",
+ "plan_dosyalari": {
+  "A": "uretim/b01-es-ordular/kosu.json (ana kollar, kol başına 1.000)",
+  "B": "uretim/b01-es-ordular/kosu-ds.json (doruk DŞ, kol başına 500)",
+  "C": "uretim/b01-es-ordular/kosu-duy.json (duyarlılık, kol başına 200)",
+  "neden_uc_dosya": "kos.mjs kol başına koşu sayısını plan başına tek tutar (--kosu) ve çıktı adını plan dosyasının adından türetir; farklı koşu sayıları ayrı plan dosyası ister. Üç dosyanın kollar, zar, kosu_sayisi, grup alanları dışındaki her alanı aynı.",
+  "deney_plani": "uretim/b01-es-ordular/DENEY-PLANI.md (tanımlar, eşikler, kontrol noktaları, manşet kaynakları)"
+ },
+ "duyarlilik_notu": "kos.mjs'in yerleşik duyarlılığı (yalnız ölçü ortancası, satır yazmaz) kullanılmaz; b01 duyarlılığı açık kollar hâlinde C dosyasında (kosu-duy.json). D1 ön saf oranının duyarlılığı pilot v3.1'de ölçüldü (1,45-2,04 kat; SONUC-V3.1).",
+ "kahraman_notu": "Gece koşusu --kahraman olmadan (kayıt dosyaları büyük). Sahne kayıtları seçilen tohumlarla motor/kayit_tohum.mjs ile sonradan; tohum seçimi kuralı DENEY-PLANI §8.3.",
+ "on_kayit": {
+  "not": "Koşudan önce yazılı tanım ve eşiklerin özeti; tam metin ve gerekçe DENEY-PLANI.md. Çelişirse DENEY-PLANI.md geçerli.",
+  "pay": "karar verilenlerde Roma / (Roma + Latin), Wilson %95; kararsız (6 sa doldu ya da iki taraf aynı adımda bozuldu) paydaya girmez, sayılır; bir kolda > %5 ise kayıp kıyasıyla aynı yön şartı (§2.1)",
+  "esli": "aynı tohum, iki kolda da karar verilen; f+ = A'da Latin B'de Roma, f- = tersi; çevirme Ç = f+ + f-; yönlü N = f+ - f-; yönsüz Y = Ç - |N|; eşli fark aralığı Newcombe 1998 yöntem 10 (§4.2)",
+  "emir_zar": "taban r45; zar r45→r45_T45_k1; makul emir r45→r60 ve r90 (N ortalaması); Manlius r45→d (düşmana göre salma); ikincil doktrin satırı r45→rb_lo (bizim biçimimizle Livius'un son hattı, tek taraflı), aynaya göre etki (rb_lo ↔ ro_lb); hata r45→ryok; kaos kontrolü r45→r46; kaos testi Ç(r46) - Ç(zar) ≤ 10 puan ve aralık 0'ı içerirse tam kelebek (§4.4)",
+  "manset_ds": "B: bitişe kalan (özgün sure_s - T) ∈ (0, 1200] sn olan çiftlerde kazananı değişen pay; Wilson + tohum düzeyinde yeniden örnekleme; ekranda 'X in 10' (§5)",
+  "baslik_kosulu": "yol 1: A d1'de Latin payı Wilson alt ≥ %8, tohum 501-1000'de nokta ≥ %8, C dört uçta nokta ≥ %5; yol 2: manşet bandı Wilson alt ≥ %20, beş koşulda nokta ≥ %15; biri tutarsa ana başlık, ikisi de tutmazsa 'Rome Won This Battle. On Our Table, It Might Not.' (§3)",
+  "d3": "r45'e göre eşli N: kaybettirir N ≤ -10 puan ve üst < 0 (koşulsuz: C dört uçta N < 0 ve üst < 0); kazandırır N ≥ +10 ve alt > 0; 'timing alone didn't win it' bütün noktalarda üst < +10 (§6)",
+  "kontrol": "d0, d2, r45, DŞ T=0 ≈ %50; zar ve r46 N ≈ 0; istatistiksel denetimlerde %99 aralığı beklenen değeri dışarıda bırakırsa tutmadı, %95 dışarıda %99 içeride sınırda (çoklu denetim); takas p(l15)+p(r15) ≈ 1, p(lyok)+p(ryok) ≈ 1; pilot ve B birebir; ayrışma öncesi alanlar aynı; tutmazsa sayı ekrana çıkmaz, kayıtlara bakılır (§7)"
+ },
+ "kollar": {
+  "d0": {
+   "temel": "kapali",
+   "not": "kontrol: iki eş ordu, kimse değiştirmez (pilot KAPALI)"
+  },
+  "d1": {
+   "temel": "acik",
+   "kural": {
+    "taraf": 0
+   },
+   "not": "şalter 1: yalnız Roma yorgun hattını değiştirir (pilot AÇIK); başlık koşulu 1. yol"
+  },
+  "d2": {
+   "temel": "acik",
+   "kural": {
+    "taraf": "ikisi",
+    "es_zamanli": true
+   },
+   "not": "şalter 2: iki taraf da değiştirir, eşzamanlı karar; kontrol ≈ %50"
+  },
+  "r15": {
+   "temel": "acik",
+   "kural": {
+    "taraf": "ikisi",
+    "es_zamanli": true,
+    "son_hat": [
+     {
+      "t_s": 900
+     },
+     {
+      "t_s": 2700
+     }
+    ]
+   },
+   "not": "D3: Roma son hattı 15. dk (düşmandan 30 dk önce, 'çok erken')"
+  },
+  "r30": {
+   "temel": "acik",
+   "kural": {
+    "taraf": "ikisi",
+    "es_zamanli": true,
+    "son_hat": [
+     {
+      "t_s": 1800
+     },
+     {
+      "t_s": 2700
+     }
+    ]
+   },
+   "not": "D3: Roma 30. dk"
+  },
+  "r45": {
+   "temel": "acik",
+   "kural": {
+    "taraf": "ikisi",
+    "es_zamanli": true,
+    "son_hat": [
+     {
+      "t_s": 2700
+     },
+     {
+      "t_s": 2700
+     }
+    ]
+   },
+   "not": "D3 simetrik kontrol (iki taraf 45. dk) ≈ %50; emir-zar biriminin tabanı"
+  },
+  "r60": {
+   "temel": "acik",
+   "kural": {
+    "taraf": "ikisi",
+    "es_zamanli": true,
+    "son_hat": [
+     {
+      "t_s": 3600
+     },
+     {
+      "t_s": 2700
+     }
+    ]
+   },
+   "not": "D3: Roma 60. dk ('düşmandan sonra' havuzu)"
+  },
+  "r90": {
+   "temel": "acik",
+   "kural": {
+    "taraf": "ikisi",
+    "es_zamanli": true,
+    "son_hat": [
+     {
+      "t_s": 5400
+     },
+     {
+      "t_s": 2700
+     }
+    ]
+   },
+   "not": "D3: Roma 90. dk ('düşmandan sonra' havuzu; Manlius'un anı değil, OLGU-PLAN #3)"
+  },
+  "r120": {
+   "temel": "acik",
+   "kural": {
+    "taraf": "ikisi",
+    "es_zamanli": true,
+    "son_hat": [
+     {
+      "t_s": 7200
+     },
+     {
+      "t_s": 2700
+     }
+    ]
+   },
+   "not": "D3: Roma 120. dk ('çok geç'; duyarlılığı yok, ekranda yalnız eğride)"
+  },
+  "ryok": {
+   "temel": "acik",
+   "kural": {
+    "taraf": "ikisi",
+    "es_zamanli": true,
+    "son_hat": [
+     null,
+     {
+      "t_s": 2700
+     }
+    ]
+   },
+   "not": "D3: Roma son hattını emirle sürmez; triarii yalnız önündekiler çözülünce girer (Livius'un olağan usulüne yakın; fark: modelde öndekiler düzenle çekilemez). 'Hiç sürmez' denmez (OLGU-D3.md #2)"
+  },
+  "r46": {
+   "temel": "acik",
+   "kural": {
+    "taraf": "ikisi",
+    "es_zamanli": true,
+    "son_hat": [
+     {
+      "t_s": 2760
+     },
+     {
+      "t_s": 2700
+     }
+    ]
+   },
+   "not": "emir-zar kaos kontrolü: 1 dakikalık gecikme, iki tarafa da yaramaması beklenir (Roma 1 dk geç)"
+  },
+  "r45_T45_k1": {
+   "temel": "acik",
+   "kural": {
+    "taraf": "ikisi",
+    "es_zamanli": true,
+    "son_hat": [
+     {
+      "t_s": 2700
+     },
+     {
+      "t_s": 2700
+     }
+    ]
+   },
+   "parametreler": {
+    "zar_yenile_s": 2700,
+    "zar_k": 1
+   },
+   "not": "emir-zar: aynı emirler, 45. dakikadan sonra yeni zar (karar değişikliklerinin ayrıştığı an)"
+  },
+  "l15": {
+   "temel": "acik",
+   "kural": {
+    "taraf": "ikisi",
+    "es_zamanli": true,
+    "son_hat": [
+     {
+      "t_s": 2700
+     },
+     {
+      "t_s": 900
+     }
+    ]
+   },
+   "not": "takas kontrolü: r15'in aynası (Latin 15. dk, Roma 45); Roma payı ≈ 1 − r15"
+  },
+  "lyok": {
+   "temel": "acik",
+   "kural": {
+    "taraf": "ikisi",
+    "es_zamanli": true,
+    "son_hat": [
+     {
+      "t_s": 2700
+     },
+     null
+    ]
+   },
+   "not": "takas kontrolü: ryok'un aynası (Latin hiç, Roma 45); Roma payı ≈ 1 − ryok"
+  },
+  "d": {
+   "temel": "acik",
+   "kural": {
+    "taraf": "ikisi",
+    "es_zamanli": true,
+    "son_hat": [
+     {
+      "dusman": {
+       "E_alti": 0.5
+      }
+     },
+     {
+      "t_s": 2700
+     }
+    ]
+   },
+   "not": "emir-zar 'Manlius' satırı: Roma son hattını düşmanın son hattı dövüşe girip ön safı yorulunca (E < 0,5) salar; Latin 45 (Livius 8.10.3-4'e en yakın karar; D3-KALDIRAC)"
+  },
+  "ld": {
+   "temel": "acik",
+   "kural": {
+    "taraf": "ikisi",
+    "es_zamanli": true,
+    "son_hat": [
+     {
+      "t_s": 2700
+     },
+     {
+      "dusman": {
+       "E_alti": 0.5
+      }
+     }
+    ]
+   },
+   "not": "takas: d'nin aynası (Latin düşmana göre salar, Roma 45); aynaya göre etki"
+  },
+  "rb_lo": {
+   "temel": "acik",
+   "kural": {
+    "taraf": "ikisi",
+    "es_zamanli": true,
+    "son_hat": [
+     {
+      "t_s": 2700,
+      "bicim": "birlesik"
+     },
+     {
+      "t_s": 2700
+     }
+    ]
+   },
+   "not": "ikincil doktrin satırı (D1 gibi; komutan çubuğuna girmez, OLGU-PLAN #1): bizim kurduğumuz biçimde Livius'un son hattı yalnız Roma'da: Roma birleşik son hatla, Latin bugünkü gibi, ikisi 45 (D3-KALDIRAC §5.4: keşifte yön Roma aleyhine, motorun birlik bütünlüğü kuralından)"
+  },
+  "ro_lb": {
+   "temel": "acik",
+   "kural": {
+    "taraf": "ikisi",
+    "es_zamanli": true,
+    "son_hat": [
+     {
+      "t_s": 2700
+     },
+     {
+      "t_s": 2700,
+      "bicim": "birlesik"
+     }
+    ]
+   },
+   "not": "takas: rb_lo'nun aynası (Latin birleşik, Roma bugünkü); aynaya göre etki, tabanın eğiliminden bağımsız"
+  }
+ },
+ "sonuc": {
+  "calistirildi": "2026-11-18T17:03:31.600Z",
+  "git_sha": "e88d40f",
+  "plan_kirli": false,
+  "node": "v24.2.0",
+  "isci": 8,
+  "kollar": {
+   "d0": {
+    "kosu": 1000,
+    "olcu": "on_saf_tukenme_s",
+    "p5": 720,
+    "p50": 817.8,
+    "p95": 925.8,
+    "ort": 819.9,
+    "sansur": 0,
+    "sansur_not": null,
+    "kazanma_payi_taraf0": 0.497,
+    "kazanma_payi_taraf1": 0.503,
+    "sure_p50": 8754.8,
+    "degisim_ort": 0,
+    "kayip": [
+     {
+      "dusen_pay": 0.1045,
+      "kacan_pay": 0.3678
+     },
+     {
+      "dusen_pay": 0.1048,
+      "kacan_pay": 0.3682
+     }
+    ]
+   },
+   "d1": {
+    "kosu": 1000,
+    "olcu": "on_saf_tukenme_s",
+    "p5": 1270.8,
+    "p50": 1406.1,
+    "p95": 1534.5,
+    "ort": 1404.3,
+    "sansur": 0,
+    "sansur_not": null,
+    "kazanma_payi_taraf0": 0.861,
+    "kazanma_payi_taraf1": 0.138,
+    "sure_p50": 7859.2,
+    "degisim_ort": 4,
+    "kayip": [
+     {
+      "dusen_pay": 0.0956,
+      "kacan_pay": 0.286
+     },
+     {
+      "dusen_pay": 0.1078,
+      "kacan_pay": 0.4023
+     }
+    ]
+   },
+   "d2": {
+    "kosu": 1000,
+    "olcu": "on_saf_tukenme_s",
+    "p5": 1269.8,
+    "p50": 1402,
+    "p95": 1546.4,
+    "ort": 1403.7,
+    "sansur": 0,
+    "sansur_not": null,
+    "kazanma_payi_taraf0": 0.511,
+    "kazanma_payi_taraf1": 0.489,
+    "sure_p50": 8353.2,
+    "degisim_ort": 7.98,
+    "kayip": [
+     {
+      "dusen_pay": 0.1086,
+      "kacan_pay": 0.3604
+     },
+     {
+      "dusen_pay": 0.1084,
+      "kacan_pay": 0.3647
+     }
+    ]
+   },
+   "r15": {
+    "kosu": 1000,
+    "olcu": "on_saf_tukenme_s",
+    "p5": 1721.8,
+    "p50": 1823.3,
+    "p95": 1931.6,
+    "ort": 1823.2,
+    "sansur": 0,
+    "sansur_not": null,
+    "kazanma_payi_taraf0": 0.333,
+    "kazanma_payi_taraf1": 0.667,
+    "sure_p50": 7568.6,
+    "degisim_ort": 15.96,
+    "kayip": [
+     {
+      "dusen_pay": 0.1178,
+      "kacan_pay": 0.3791
+     },
+     {
+      "dusen_pay": 0.1154,
+      "kacan_pay": 0.3239
+     }
+    ]
+   },
+   "r30": {
+    "kosu": 1000,
+    "olcu": "on_saf_tukenme_s",
+    "p5": 1269.8,
+    "p50": 1402,
+    "p95": 1546.4,
+    "ort": 1403.7,
+    "sansur": 0,
+    "sansur_not": null,
+    "kazanma_payi_taraf0": 0.515,
+    "kazanma_payi_taraf1": 0.485,
+    "sure_p50": 7387.6,
+    "degisim_ort": 15.96,
+    "kayip": [
+     {
+      "dusen_pay": 0.1162,
+      "kacan_pay": 0.3556
+     },
+     {
+      "dusen_pay": 0.1183,
+      "kacan_pay": 0.3524
+     }
+    ]
+   },
+   "r45": {
+    "kosu": 1000,
+    "olcu": "on_saf_tukenme_s",
+    "p5": 1269.8,
+    "p50": 1402,
+    "p95": 1546.4,
+    "ort": 1403.7,
+    "sansur": 0,
+    "sansur_not": null,
+    "kazanma_payi_taraf0": 0.504,
+    "kazanma_payi_taraf1": 0.496,
+    "sure_p50": 7902.5,
+    "degisim_ort": 15.96,
+    "kayip": [
+     {
+      "dusen_pay": 0.118,
+      "kacan_pay": 0.3538
+     },
+     {
+      "dusen_pay": 0.1181,
+      "kacan_pay": 0.3561
+     }
+    ]
+   },
+   "r60": {
+    "kosu": 1000,
+    "olcu": "on_saf_tukenme_s",
+    "p5": 1269.8,
+    "p50": 1402,
+    "p95": 1546.4,
+    "ort": 1403.7,
+    "sansur": 0,
+    "sansur_not": null,
+    "kazanma_payi_taraf0": 0.47,
+    "kazanma_payi_taraf1": 0.53,
+    "sure_p50": 7541.5,
+    "degisim_ort": 15.94,
+    "kayip": [
+     {
+      "dusen_pay": 0.1192,
+      "kacan_pay": 0.3512
+     },
+     {
+      "dusen_pay": 0.1159,
+      "kacan_pay": 0.3543
+     }
+    ]
+   },
+   "r90": {
+    "kosu": 1000,
+    "olcu": "on_saf_tukenme_s",
+    "p5": 1269.8,
+    "p50": 1402,
+    "p95": 1546.4,
+    "ort": 1403.7,
+    "sansur": 0,
+    "sansur_not": null,
+    "kazanma_payi_taraf0": 0.477,
+    "kazanma_payi_taraf1": 0.523,
+    "sure_p50": 8000.1,
+    "degisim_ort": 15.64,
+    "kayip": [
+     {
+      "dusen_pay": 0.1215,
+      "kacan_pay": 0.3412
+     },
+     {
+      "dusen_pay": 0.1157,
+      "kacan_pay": 0.3478
+     }
+    ]
+   },
+   "r120": {
+    "kosu": 1000,
+    "olcu": "on_saf_tukenme_s",
+    "p5": 1269.8,
+    "p50": 1402,
+    "p95": 1546.4,
+    "ort": 1403.7,
+    "sansur": 0,
+    "sansur_not": null,
+    "kazanma_payi_taraf0": 0.316,
+    "kazanma_payi_taraf1": 0.684,
+    "sure_p50": 7311.7,
+    "degisim_ort": 13.84,
+    "kayip": [
+     {
+      "dusen_pay": 0.115,
+      "kacan_pay": 0.3748
+     },
+     {
+      "dusen_pay": 0.106,
+      "kacan_pay": 0.2841
+     }
+    ]
+   },
+   "ryok": {
+    "kosu": 1000,
+    "olcu": "on_saf_tukenme_s",
+    "p5": 1269.8,
+    "p50": 1402,
+    "p95": 1546.4,
+    "ort": 1403.7,
+    "sansur": 0,
+    "sansur_not": null,
+    "kazanma_payi_taraf0": 0.034,
+    "kazanma_payi_taraf1": 0.966,
+    "sure_p50": 7305.8,
+    "degisim_ort": 11.97,
+    "kayip": [
+     {
+      "dusen_pay": 0.1118,
+      "kacan_pay": 0.4115
+     },
+     {
+      "dusen_pay": 0.0997,
+      "kacan_pay": 0.2248
+     }
+    ]
+   },
+   "r46": {
+    "kosu": 1000,
+    "olcu": "on_saf_tukenme_s",
+    "p5": 1269.8,
+    "p50": 1402,
+    "p95": 1546.4,
+    "ort": 1403.7,
+    "sansur": 0,
+    "sansur_not": null,
+    "kazanma_payi_taraf0": 0.421,
+    "kazanma_payi_taraf1": 0.579,
+    "sure_p50": 7890.1,
+    "degisim_ort": 15.88,
+    "kayip": [
+     {
+      "dusen_pay": 0.1199,
+      "kacan_pay": 0.3637
+     },
+     {
+      "dusen_pay": 0.1161,
+      "kacan_pay": 0.3413
+     }
+    ]
+   },
+   "r45_T45_k1": {
+    "kosu": 1000,
+    "olcu": "on_saf_tukenme_s",
+    "p5": 1269.8,
+    "p50": 1402,
+    "p95": 1546.4,
+    "ort": 1403.7,
+    "sansur": 0,
+    "sansur_not": null,
+    "kazanma_payi_taraf0": 0.491,
+    "kazanma_payi_taraf1": 0.509,
+    "sure_p50": 8021.4,
+    "degisim_ort": 15.96,
+    "kayip": [
+     {
+      "dusen_pay": 0.1185,
+      "kacan_pay": 0.3552
+     },
+     {
+      "dusen_pay": 0.1183,
+      "kacan_pay": 0.356
+     }
+    ]
+   },
+   "l15": {
+    "kosu": 1000,
+    "olcu": "on_saf_tukenme_s",
+    "p5": 1284,
+    "p50": 1428.5,
+    "p95": 1577.4,
+    "ort": 1429.1,
+    "sansur": 0,
+    "sansur_not": null,
+    "kazanma_payi_taraf0": 0.651,
+    "kazanma_payi_taraf1": 0.348,
+    "sure_p50": 7594.6,
+    "degisim_ort": 15.96,
+    "kayip": [
+     {
+      "dusen_pay": 0.1156,
+      "kacan_pay": 0.328
+     },
+     {
+      "dusen_pay": 0.1174,
+      "kacan_pay": 0.3777
+     }
+    ]
+   },
+   "lyok": {
+    "kosu": 1000,
+    "olcu": "on_saf_tukenme_s",
+    "p5": 1269.8,
+    "p50": 1402,
+    "p95": 1546.4,
+    "ort": 1403.7,
+    "sansur": 0,
+    "sansur_not": null,
+    "kazanma_payi_taraf0": 0.967,
+    "kazanma_payi_taraf1": 0.033,
+    "sure_p50": 7343.3,
+    "degisim_ort": 11.97,
+    "kayip": [
+     {
+      "dusen_pay": 0.1001,
+      "kacan_pay": 0.2217
+     },
+     {
+      "dusen_pay": 0.1119,
+      "kacan_pay": 0.4118
+     }
+    ]
+   },
+   "d": {
+    "kosu": 1000,
+    "olcu": "on_saf_tukenme_s",
+    "p5": 1269.8,
+    "p50": 1402,
+    "p95": 1546.4,
+    "ort": 1403.7,
+    "sansur": 0,
+    "sansur_not": null,
+    "kazanma_payi_taraf0": 0.468,
+    "kazanma_payi_taraf1": 0.532,
+    "sure_p50": 7607.8,
+    "degisim_ort": 15.91,
+    "kayip": [
+     {
+      "dusen_pay": 0.1196,
+      "kacan_pay": 0.3567
+     },
+     {
+      "dusen_pay": 0.1162,
+      "kacan_pay": 0.3512
+     }
+    ]
+   },
+   "ld": {
+    "kosu": 1000,
+    "olcu": "on_saf_tukenme_s",
+    "p5": 1269.8,
+    "p50": 1402,
+    "p95": 1546.4,
+    "ort": 1403.7,
+    "sansur": 0,
+    "sansur_not": null,
+    "kazanma_payi_taraf0": 0.55,
+    "kazanma_payi_taraf1": 0.45,
+    "sure_p50": 7636.7,
+    "degisim_ort": 15.89,
+    "kayip": [
+     {
+      "dusen_pay": 0.1165,
+      "kacan_pay": 0.3458
+     },
+     {
+      "dusen_pay": 0.1191,
+      "kacan_pay": 0.3591
+     }
+    ]
+   },
+   "rb_lo": {
+    "kosu": 1000,
+    "olcu": "on_saf_tukenme_s",
+    "p5": 1269.8,
+    "p50": 1402,
+    "p95": 1546.4,
+    "ort": 1403.7,
+    "sansur": 0,
+    "sansur_not": null,
+    "kazanma_payi_taraf0": 0.429,
+    "kazanma_payi_taraf1": 0.571,
+    "sure_p50": 9811,
+    "degisim_ort": 15.96,
+    "kayip": [
+     {
+      "dusen_pay": 0.1323,
+      "kacan_pay": 0.3075
+     },
+     {
+      "dusen_pay": 0.1146,
+      "kacan_pay": 0.335
+     }
+    ]
+   },
+   "ro_lb": {
+    "kosu": 1000,
+    "olcu": "on_saf_tukenme_s",
+    "p5": 1269.8,
+    "p50": 1402,
+    "p95": 1546.4,
+    "ort": 1403.7,
+    "sansur": 0,
+    "sansur_not": null,
+    "kazanma_payi_taraf0": 0.588,
+    "kazanma_payi_taraf1": 0.412,
+    "sure_p50": 9853.6,
+    "degisim_ort": 15.96,
+    "kayip": [
+     {
+      "dusen_pay": 0.1147,
+      "kacan_pay": 0.3332
+     },
+     {
+      "dusen_pay": 0.1324,
+      "kacan_pay": 0.3132
+     }
+    ]
+   }
+  },
+  "duyarlilik": null,
+  "hiz": {
+   "kosu": 18000,
+   "ms_kosu_p50": 3792.9,
+   "ms_kosu_p95": 5728.1,
+   "toplam_s": 5269,
+   "ajan_adim_s": 329615836,
+   "makine": "Apple M3"
+  },
+  "kahraman": {},
+  "devam": {
+   "ara_kayittan": [
+    "kol_d0",
+    "kol_d1",
+    "kol_d2",
+    "kol_r15",
+    "kol_r30",
+    "kol_r45",
+    "kol_r60",
+    "kol_r90"
+   ],
+   "not": "bu aşamalar önceki çalıştırmanın ara kaydından; hız raporu yalnız bu çalıştırmayı ölçer"
+  }
+ }
+}
