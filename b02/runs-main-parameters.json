@@ -1,0 +1,808 @@
+{
+ "bolum": "b02-ilk-kacan",
+ "mekanizma": "erken kaçış (moral dışı) ve ordunun bozulması",
+ "kural_cumlesi": "Belirli askerler ilk temastan 60 sn sonra, moral durumlarına bakmadan kaçar.",
+ "cerceve": "İki eş hoplit hattı (taraf başına 8 birlik × 18 kol × 8 sıra = 1.152), hat değişimi yok, pilum yok, kovalama yok.",
+ "model_surumu": "motor 2572cba (b02 bayrakları erken_kacan, bos_cephe_dur; kovalama kapalı)",
+ "kural": {
+  "modul": null,
+  "parametreler": {}
+ },
+ "birlikler": [
+  {
+   "ad": "a-1",
+   "taraf": 0,
+   "hat": 1,
+   "grup": 0,
+   "kol": 18,
+   "sira": 8,
+   "w_m": 0.9,
+   "d_m": 0.9,
+   "cx_m": -63,
+   "onY_m": 0,
+   "komut": "ilerle",
+   "pilum": 0
+  },
+  {
+   "ad": "a-2",
+   "taraf": 0,
+   "hat": 1,
+   "grup": 1,
+   "kol": 18,
+   "sira": 8,
+   "w_m": 0.9,
+   "d_m": 0.9,
+   "cx_m": -45,
+   "onY_m": 0,
+   "komut": "ilerle",
+   "pilum": 0
+  },
+  {
+   "ad": "a-3",
+   "taraf": 0,
+   "hat": 1,
+   "grup": 2,
+   "kol": 18,
+   "sira": 8,
+   "w_m": 0.9,
+   "d_m": 0.9,
+   "cx_m": -27,
+   "onY_m": 0,
+   "komut": "ilerle",
+   "pilum": 0
+  },
+  {
+   "ad": "a-4",
+   "taraf": 0,
+   "hat": 1,
+   "grup": 3,
+   "kol": 18,
+   "sira": 8,
+   "w_m": 0.9,
+   "d_m": 0.9,
+   "cx_m": -9,
+   "onY_m": 0,
+   "komut": "ilerle",
+   "pilum": 0
+  },
+  {
+   "ad": "a-5",
+   "taraf": 0,
+   "hat": 1,
+   "grup": 4,
+   "kol": 18,
+   "sira": 8,
+   "w_m": 0.9,
+   "d_m": 0.9,
+   "cx_m": 9,
+   "onY_m": 0,
+   "komut": "ilerle",
+   "pilum": 0
+  },
+  {
+   "ad": "a-6",
+   "taraf": 0,
+   "hat": 1,
+   "grup": 5,
+   "kol": 18,
+   "sira": 8,
+   "w_m": 0.9,
+   "d_m": 0.9,
+   "cx_m": 27,
+   "onY_m": 0,
+   "komut": "ilerle",
+   "pilum": 0
+  },
+  {
+   "ad": "a-7",
+   "taraf": 0,
+   "hat": 1,
+   "grup": 6,
+   "kol": 18,
+   "sira": 8,
+   "w_m": 0.9,
+   "d_m": 0.9,
+   "cx_m": 45,
+   "onY_m": 0,
+   "komut": "ilerle",
+   "pilum": 0
+  },
+  {
+   "ad": "a-8",
+   "taraf": 0,
+   "hat": 1,
+   "grup": 7,
+   "kol": 18,
+   "sira": 8,
+   "w_m": 0.9,
+   "d_m": 0.9,
+   "cx_m": 63,
+   "onY_m": 0,
+   "komut": "ilerle",
+   "pilum": 0
+  },
+  {
+   "ad": "b-1",
+   "taraf": 1,
+   "hat": 1,
+   "grup": 0,
+   "kol": 18,
+   "sira": 8,
+   "w_m": 0.9,
+   "d_m": 0.9,
+   "cx_m": -63,
+   "onY_m": 60,
+   "komut": "ilerle",
+   "pilum": 0
+  },
+  {
+   "ad": "b-2",
+   "taraf": 1,
+   "hat": 1,
+   "grup": 1,
+   "kol": 18,
+   "sira": 8,
+   "w_m": 0.9,
+   "d_m": 0.9,
+   "cx_m": -45,
+   "onY_m": 60,
+   "komut": "ilerle",
+   "pilum": 0
+  },
+  {
+   "ad": "b-3",
+   "taraf": 1,
+   "hat": 1,
+   "grup": 2,
+   "kol": 18,
+   "sira": 8,
+   "w_m": 0.9,
+   "d_m": 0.9,
+   "cx_m": -27,
+   "onY_m": 60,
+   "komut": "ilerle",
+   "pilum": 0
+  },
+  {
+   "ad": "b-4",
+   "taraf": 1,
+   "hat": 1,
+   "grup": 3,
+   "kol": 18,
+   "sira": 8,
+   "w_m": 0.9,
+   "d_m": 0.9,
+   "cx_m": -9,
+   "onY_m": 60,
+   "komut": "ilerle",
+   "pilum": 0
+  },
+  {
+   "ad": "b-5",
+   "taraf": 1,
+   "hat": 1,
+   "grup": 4,
+   "kol": 18,
+   "sira": 8,
+   "w_m": 0.9,
+   "d_m": 0.9,
+   "cx_m": 9,
+   "onY_m": 60,
+   "komut": "ilerle",
+   "pilum": 0
+  },
+  {
+   "ad": "b-6",
+   "taraf": 1,
+   "hat": 1,
+   "grup": 5,
+   "kol": 18,
+   "sira": 8,
+   "w_m": 0.9,
+   "d_m": 0.9,
+   "cx_m": 27,
+   "onY_m": 60,
+   "komut": "ilerle",
+   "pilum": 0
+  },
+  {
+   "ad": "b-7",
+   "taraf": 1,
+   "hat": 1,
+   "grup": 6,
+   "kol": 18,
+   "sira": 8,
+   "w_m": 0.9,
+   "d_m": 0.9,
+   "cx_m": 45,
+   "onY_m": 60,
+   "komut": "ilerle",
+   "pilum": 0
+  },
+  {
+   "ad": "b-8",
+   "taraf": 1,
+   "hat": 1,
+   "grup": 7,
+   "kol": 18,
+   "sira": 8,
+   "w_m": 0.9,
+   "d_m": 0.9,
+   "cx_m": 63,
+   "onY_m": 60,
+   "komut": "ilerle",
+   "pilum": 0
+  }
+ ],
+ "olcu": {
+  "ad": "kazanan",
+  "tanim": "birincil: taraf 0 kazanma payı, karar verilenlerde (DENEY-PLANI §3)"
+ },
+ "durdurma": "bir tarafın (düşen + kaçan) payı q_taraf'ı (0,5) aşar ya da bütün birlikleri çözülür; t_max_s 3 saat (kararsız)",
+ "tohum_kok": 20261124,
+ "kayit_adim": 5,
+ "plan_surumu": "b02 v1.1 (KİLİTLİ 22 Kas 2026: kurucu \"Evet, kilitle\"; DENEY-PLANI v1.1)",
+ "parametreler": {
+  "dt_s": 0.2,
+  "t_max_s": {
+   "deger": 10800,
+   "etiket": "durdurma: 3 saat (kalibrasyon tur 4, a_birlik 8: süre ortancası 57 dk, tur4.log)"
+  },
+  "T_dayanma_dk": {
+   "deger": 8,
+   "aralik": [
+    2,
+    15
+   ],
+   "kaynak": "LS-25",
+   "etiket": "tahmin (ölçüm yok; LS-25: Sabin 2000 s. 10, saatler süren sürekli düello 'hayal edilemez'; ekranda tırnaklı alıntı yok)"
+  },
+  "T_toparlanma_dk": {
+   "deger": 15,
+   "aralik": [
+    5,
+    30
+   ],
+   "kaynak": "LS-26",
+   "etiket": "tahmin"
+  },
+  "T_dovus_s": {
+   "ort": 45,
+   "sd": 20,
+   "kaynak": "LS-23",
+   "etiket": "tahmin, kalibre (Sabin: 'kısa ve yerel' patlama; sayı yok; S16a bantta)"
+  },
+  "T_dinlenme_s": {
+   "ort": 90,
+   "sd": 45,
+   "aralik": [
+    {
+     "ort": 60,
+     "sd": 30
+    },
+    {
+     "ort": 300,
+     "sd": 150
+    }
+   ],
+   "kaynak": "LS-24",
+   "etiket": "tahmin, kalibre (Sabin: emniyet mesafesi; süre yok; duyarlılıkta 60-300 s)"
+  },
+  "lambda_vurus_1s": {
+   "deger": 0.2,
+   "aralik": [
+    0.2,
+    1
+   ],
+   "kaynak": "LS-20",
+   "etiket": "tahmin (Sabin dn. 45: 5 sn'de bir vuruş varsayımı)"
+  },
+  "p_isabet": {
+   "deger": 0.03,
+   "aralik": [
+    0.015,
+    0.045
+   ],
+   "kaynak": "LS-21",
+   "etiket": "tahmin, kalibre (saldırı başına ölüm 0,03 × 0,2 = %0,6 < Sabin dn. 45 %1)"
+  },
+  "p_olum": {
+   "deger": 0.2,
+   "aralik": [
+    0.1,
+    0.4
+   ],
+   "kaynak": "LS-22",
+   "etiket": "tahmin"
+  },
+  "a_birlik": {
+   "deger": 8,
+   "aralik": [
+    6,
+    12
+   ],
+   "kaynak": "kalibrasyon/KALIBRASYON.md (galip ölü bandı, Krentz 1985, HK-01)",
+   "etiket": "tahmin, kalibre (n0)"
+  },
+  "a_kayip": {
+   "deger": 1,
+   "kaynak": "pilot v3.1",
+   "etiket": "tahmin; kaçan = düşen varsayımı (e_bulasma ile eşit)"
+  },
+  "e_bulasma": {
+   "deger": 1,
+   "aralik": [
+    0,
+    2
+   ],
+   "kaynak": "pilot v3.1",
+   "etiket": "tahmin; kaçan da düşen gibi çevreye şok verir (a_kayip = e_bulasma): kaçan = düşen varsayımı"
+  },
+  "yara_M": 0.01,
+  "r_moral_1s": 0.001,
+  "b_yorgun_1s": 0.0005,
+  "d_yan_1s": 0.001,
+  "M_bozgun": {
+   "deger": 0.2,
+   "aralik": [
+    0.15,
+    0.3
+   ],
+   "kaynak": "LS-43",
+   "etiket": "tahmin"
+  },
+  "q_taraf": {
+   "deger": 0.5,
+   "aralik": [
+    0.4,
+    0.6
+   ],
+   "kaynak": "LS-47 (ölü + esir); model düşen + kaçan sayar",
+   "etiket": "tahmin; erken kaçan bu eşiğe doğrudan sayılır (OLGU-PLAN-V1 P1)"
+  },
+  "v_yuru_ms": {
+   "deger": 1.2,
+   "aralik": [
+    0.8,
+    1.5
+   ],
+   "kaynak": "LS-10, LS-17",
+   "etiket": "tahmin (Vegetius marş hızı ve Askew 15. yy zırh ölçümü; muharebe ilerleyişi değil)"
+  },
+  "cokunce_ilerle": true,
+  "yana_devral": {
+   "deger": true,
+   "kaynak": "TASARIM §2.8; Livius 8.8.9 ('in intervalla ordinum principes recipiebant. tum principum pugna erat'); ITIRAZCI-V3 #2, #3, #6",
+   "etiket": "model seçimi: öne geçen birlik çekilenin şeridine yana kayar ve izleyen düşmanı karşılar; yana kayma hiçbir kaynakta yok (modern okumalar arka hattı ileri yürütür: Veith s. 366, 368; Sabin s. 16); modelde kanat teması olmadığı için onun yerine geçer"
+  },
+  "kanat_siniri": {
+   "deger": true,
+   "kaynak": "Sabin 2000 s. 16 (arka birlikler aralığa girişi caydırır); Veith 1928 s. 359-360; karşı görüş Delbrück I³ s. 304, 457-458; kapsam: Veith s. 361 lejyona karşı lejyonu tartışmaz",
+   "etiket": "model seçimi: ilerleyen birlik bitişik düşman birliğin ön çizgisini geçmez (aralığa dalmaz); modelde kanat teması yok, dalış cezasız kalmasın diye yasak"
+  },
+  "kanat_m": 1,
+  "kayarken_temas_yok": {
+   "deger": true,
+   "kaynak": "TASARIM §2.8 \"v3.1 adayı\" ve \"v3.1 ve hız\"; çekirdek 9d0e24a, test T13",
+   "etiket": "model düzeltmesi (yapıntı giderme), parametre değil: yana kayan birlik (hedefCx dolu) ve karşısı kayma bitene dek yeni temas kurmaz; kayma bitince sonraki adımda kurulur. Kaymaya temasta başlayan birliğin cephesi bozulmaz (v3 planında yoklamada 0)"
+  },
+  "bos_cephe_dur": {
+   "deger": true,
+   "etiket": "model seçimi (OLGU-PARAMETRE #7): karşısı çözülen birlik durur; kapalıyken sonsuza yürür; n0 50 tohumun 22sinde sonucu değiştirir (bos_cephe_denetim.mjs); duyarlılık ucu bcd0"
+  },
+  "isaretli": {
+   "birlik": "a-4",
+   "kol": 9,
+   "sira": 2
+  }
+ },
+ "kosu_sayisi": 1000,
+ "kollar": {
+  "n0": {
+   "not": "kontrol: kural yok, ayna; %50"
+  },
+  "o1": {
+   "parametreler": {
+    "erken_kacan": {
+     "taraf": 0,
+     "N": 1,
+     "yer": "rastgele",
+     "tetik_s": 60,
+     "eylem": "kacis"
+    }
+   },
+   "not": "1 asker (rastgele yer) tetikte kaçar"
+  },
+  "o5": {
+   "parametreler": {
+    "erken_kacan": {
+     "taraf": 0,
+     "N": 5,
+     "yer": "rastgele",
+     "tetik_s": 60,
+     "eylem": "kacis"
+    }
+   },
+   "not": "5 asker (rastgele yer) tetikte kaçar"
+  },
+  "o10": {
+   "parametreler": {
+    "erken_kacan": {
+     "taraf": 0,
+     "N": 10,
+     "yer": "rastgele",
+     "tetik_s": 60,
+     "eylem": "kacis"
+    }
+   },
+   "not": "10 asker (rastgele yer) tetikte kaçar"
+  },
+  "o25": {
+   "parametreler": {
+    "erken_kacan": {
+     "taraf": 0,
+     "N": 25,
+     "yer": "rastgele",
+     "tetik_s": 60,
+     "eylem": "kacis"
+    }
+   },
+   "not": "25 asker (rastgele yer) tetikte kaçar"
+  },
+  "o50": {
+   "parametreler": {
+    "erken_kacan": {
+     "taraf": 0,
+     "N": 50,
+     "yer": "rastgele",
+     "tetik_s": 60,
+     "eylem": "kacis"
+    }
+   },
+   "not": "50 asker (rastgele yer) tetikte kaçar"
+  },
+  "o100": {
+   "parametreler": {
+    "erken_kacan": {
+     "taraf": 0,
+     "N": 100,
+     "yer": "rastgele",
+     "tetik_s": 60,
+     "eylem": "kacis"
+    }
+   },
+   "not": "100 asker (rastgele yer) tetikte kaçar"
+  },
+  "arka10": {
+   "parametreler": {
+    "erken_kacan": {
+     "taraf": 0,
+     "N": 10,
+     "yer": "arka",
+     "tetik_s": 60,
+     "eylem": "kacis"
+    }
+   },
+   "not": "10 asker yalnız arka yarıdan"
+  },
+  "arka25": {
+   "parametreler": {
+    "erken_kacan": {
+     "taraf": 0,
+     "N": 25,
+     "yer": "arka",
+     "tetik_s": 60,
+     "eylem": "kacis"
+    }
+   },
+   "not": "25 asker yalnız arka yarıdan"
+  },
+  "arka50": {
+   "parametreler": {
+    "erken_kacan": {
+     "taraf": 0,
+     "N": 50,
+     "yer": "arka",
+     "tetik_s": 60,
+     "eylem": "kacis"
+    }
+   },
+   "not": "50 asker yalnız arka yarıdan"
+  },
+  "ayna25": {
+   "parametreler": {
+    "erken_kacan": {
+     "taraf": 1,
+     "N": 25,
+     "yer": "rastgele",
+     "tetik_s": 60,
+     "eylem": "kacis"
+    }
+   },
+   "not": "kontrol: kural taraf 1e; p(o25) + p(ayna25) = 1"
+  }
+ },
+ "sonuc": {
+  "calistirildi": "2026-11-22T16:24:32.564Z",
+  "git_sha": "160de58",
+  "plan_kirli": false,
+  "node": "v24.2.0",
+  "isci": 8,
+  "kollar": {
+   "n0": {
+    "kosu": 1000,
+    "olcu": "kazanan",
+    "p5": 0,
+    "p50": 1,
+    "p95": 1,
+    "ort": 0.5,
+    "sansur": 0,
+    "sansur_not": null,
+    "kazanma_payi_taraf0": 0.493,
+    "kazanma_payi_taraf1": 0.507,
+    "sure_p50": 3414.1,
+    "degisim_ort": 0,
+    "kayip": [
+     {
+      "dusen_pay": 0.0663,
+      "kacan_pay": 0.3013
+     },
+     {
+      "dusen_pay": 0.0661,
+      "kacan_pay": 0.2952
+     }
+    ]
+   },
+   "o1": {
+    "kosu": 1000,
+    "olcu": "kazanan",
+    "p5": 0,
+    "p50": 1,
+    "p95": 1,
+    "ort": 0.5,
+    "sansur": 0,
+    "sansur_not": null,
+    "kazanma_payi_taraf0": 0.462,
+    "kazanma_payi_taraf1": 0.538,
+    "sure_p50": 3345.2,
+    "degisim_ort": 0,
+    "kayip": [
+     {
+      "dusen_pay": 0.0657,
+      "kacan_pay": 0.3148
+     },
+     {
+      "dusen_pay": 0.0656,
+      "kacan_pay": 0.2812
+     }
+    ]
+   },
+   "o5": {
+    "kosu": 1000,
+    "olcu": "kazanan",
+    "p5": 0,
+    "p50": 1,
+    "p95": 1,
+    "ort": 0.6,
+    "sansur": 0,
+    "sansur_not": null,
+    "kazanma_payi_taraf0": 0.37,
+    "kazanma_payi_taraf1": 0.63,
+    "sure_p50": 3226.6,
+    "degisim_ort": 0,
+    "kayip": [
+     {
+      "dusen_pay": 0.0636,
+      "kacan_pay": 0.351
+     },
+     {
+      "dusen_pay": 0.0635,
+      "kacan_pay": 0.239
+     }
+    ]
+   },
+   "o10": {
+    "kosu": 1000,
+    "olcu": "kazanan",
+    "p5": 0,
+    "p50": 1,
+    "p95": 1,
+    "ort": 0.7,
+    "sansur": 0,
+    "sansur_not": null,
+    "kazanma_payi_taraf0": 0.275,
+    "kazanma_payi_taraf1": 0.725,
+    "sure_p50": 3022,
+    "degisim_ort": 0,
+    "kayip": [
+     {
+      "dusen_pay": 0.0604,
+      "kacan_pay": 0.3921
+     },
+     {
+      "dusen_pay": 0.0606,
+      "kacan_pay": 0.1922
+     }
+    ]
+   },
+   "o25": {
+    "kosu": 1000,
+    "olcu": "kazanan",
+    "p5": 0,
+    "p50": 1,
+    "p95": 1,
+    "ort": 0.9,
+    "sansur": 0,
+    "sansur_not": null,
+    "kazanma_payi_taraf0": 0.063,
+    "kazanma_payi_taraf1": 0.937,
+    "sure_p50": 2292,
+    "degisim_ort": 0,
+    "kayip": [
+     {
+      "dusen_pay": 0.0491,
+      "kacan_pay": 0.4752
+     },
+     {
+      "dusen_pay": 0.049,
+      "kacan_pay": 0.0648
+     }
+    ]
+   },
+   "o50": {
+    "kosu": 1000,
+    "olcu": "kazanan",
+    "p5": 1,
+    "p50": 1,
+    "p95": 1,
+    "ort": 1,
+    "sansur": 0,
+    "sansur_not": null,
+    "kazanma_payi_taraf0": 0.001,
+    "kazanma_payi_taraf1": 0.999,
+    "sure_p50": 968.1,
+    "degisim_ort": 0,
+    "kayip": [
+     {
+      "dusen_pay": 0.0268,
+      "kacan_pay": 0.515
+     },
+     {
+      "dusen_pay": 0.0265,
+      "kacan_pay": 0.0042
+     }
+    ]
+   },
+   "o100": {
+    "kosu": 1000,
+    "olcu": "kazanan",
+    "p5": 1,
+    "p50": 1,
+    "p95": 1,
+    "ort": 1,
+    "sansur": 0,
+    "sansur_not": null,
+    "kazanma_payi_taraf0": 0,
+    "kazanma_payi_taraf1": 1,
+    "sure_p50": 78.8,
+    "degisim_ort": 0,
+    "kayip": [
+     {
+      "dusen_pay": 0.0056,
+      "kacan_pay": 0.7316
+     },
+     {
+      "dusen_pay": 0.0056,
+      "kacan_pay": 0
+     }
+    ]
+   },
+   "arka10": {
+    "kosu": 1000,
+    "olcu": "kazanan",
+    "p5": 0,
+    "p50": 1,
+    "p95": 1,
+    "ort": 0.8,
+    "sansur": 0,
+    "sansur_not": null,
+    "kazanma_payi_taraf0": 0.248,
+    "kazanma_payi_taraf1": 0.752,
+    "sure_p50": 3057.8,
+    "degisim_ort": 0,
+    "kayip": [
+     {
+      "dusen_pay": 0.061,
+      "kacan_pay": 0.4038
+     },
+     {
+      "dusen_pay": 0.0607,
+      "kacan_pay": 0.1832
+     }
+    ]
+   },
+   "arka25": {
+    "kosu": 1000,
+    "olcu": "kazanan",
+    "p5": 1,
+    "p50": 1,
+    "p95": 1,
+    "ort": 1,
+    "sansur": 0,
+    "sansur_not": null,
+    "kazanma_payi_taraf0": 0.039,
+    "kazanma_payi_taraf1": 0.961,
+    "sure_p50": 2272.7,
+    "degisim_ort": 0,
+    "kayip": [
+     {
+      "dusen_pay": 0.0495,
+      "kacan_pay": 0.4804
+     },
+     {
+      "dusen_pay": 0.0489,
+      "kacan_pay": 0.0598
+     }
+    ]
+   },
+   "arka50": {
+    "kosu": 1000,
+    "olcu": "kazanan",
+    "p5": 1,
+    "p50": 1,
+    "p95": 1,
+    "ort": 1,
+    "sansur": 0,
+    "sansur_not": null,
+    "kazanma_payi_taraf0": 0,
+    "kazanma_payi_taraf1": 1,
+    "sure_p50": 984.4,
+    "degisim_ort": 0,
+    "kayip": [
+     {
+      "dusen_pay": 0.0266,
+      "kacan_pay": 0.5137
+     },
+     {
+      "dusen_pay": 0.0265,
+      "kacan_pay": 0.0048
+     }
+    ]
+   },
+   "ayna25": {
+    "kosu": 1000,
+    "olcu": "kazanan",
+    "p5": 0,
+    "p50": 0,
+    "p95": 0,
+    "ort": 0,
+    "sansur": 0,
+    "sansur_not": null,
+    "kazanma_payi_taraf0": 0.952,
+    "kazanma_payi_taraf1": 0.048,
+    "sure_p50": 2263.7,
+    "degisim_ort": 0,
+    "kayip": [
+     {
+      "dusen_pay": 0.0493,
+      "kacan_pay": 0.0615
+     },
+     {
+      "dusen_pay": 0.0497,
+      "kacan_pay": 0.4764
+     }
+    ]
+   }
+  },
+  "duyarlilik": null,
+  "hiz": {
+   "kosu": 11000,
+   "ms_kosu_p50": 1392.3,
+   "ms_kosu_p95": 2393.3,
+   "toplam_s": 1802.2,
+   "ajan_adim_s": 163743136,
+   "makine": "Apple M3"
+  },
+  "kahraman": {}
+ }
+}

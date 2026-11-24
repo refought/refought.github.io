@@ -1,0 +1,1975 @@
+{
+ "bolum": "b02-ilk-kacan",
+ "mekanizma": "erken kaçış (moral dışı) ve ordunun bozulması",
+ "kural_cumlesi": "Belirli askerler ilk temastan 60 sn sonra, moral durumlarına bakmadan kaçar.",
+ "cerceve": "İki eş hoplit hattı (taraf başına 8 birlik × 18 kol × 8 sıra = 1.152), hat değişimi yok, pilum yok, kovalama yok.",
+ "model_surumu": "motor 2572cba (b02 bayrakları erken_kacan, bos_cephe_dur; kovalama kapalı)",
+ "kural": {
+  "modul": null,
+  "parametreler": {}
+ },
+ "birlikler": [
+  {
+   "ad": "a-1",
+   "taraf": 0,
+   "hat": 1,
+   "grup": 0,
+   "kol": 18,
+   "sira": 8,
+   "w_m": 0.9,
+   "d_m": 0.9,
+   "cx_m": -63,
+   "onY_m": 0,
+   "komut": "ilerle",
+   "pilum": 0
+  },
+  {
+   "ad": "a-2",
+   "taraf": 0,
+   "hat": 1,
+   "grup": 1,
+   "kol": 18,
+   "sira": 8,
+   "w_m": 0.9,
+   "d_m": 0.9,
+   "cx_m": -45,
+   "onY_m": 0,
+   "komut": "ilerle",
+   "pilum": 0
+  },
+  {
+   "ad": "a-3",
+   "taraf": 0,
+   "hat": 1,
+   "grup": 2,
+   "kol": 18,
+   "sira": 8,
+   "w_m": 0.9,
+   "d_m": 0.9,
+   "cx_m": -27,
+   "onY_m": 0,
+   "komut": "ilerle",
+   "pilum": 0
+  },
+  {
+   "ad": "a-4",
+   "taraf": 0,
+   "hat": 1,
+   "grup": 3,
+   "kol": 18,
+   "sira": 8,
+   "w_m": 0.9,
+   "d_m": 0.9,
+   "cx_m": -9,
+   "onY_m": 0,
+   "komut": "ilerle",
+   "pilum": 0
+  },
+  {
+   "ad": "a-5",
+   "taraf": 0,
+   "hat": 1,
+   "grup": 4,
+   "kol": 18,
+   "sira": 8,
+   "w_m": 0.9,
+   "d_m": 0.9,
+   "cx_m": 9,
+   "onY_m": 0,
+   "komut": "ilerle",
+   "pilum": 0
+  },
+  {
+   "ad": "a-6",
+   "taraf": 0,
+   "hat": 1,
+   "grup": 5,
+   "kol": 18,
+   "sira": 8,
+   "w_m": 0.9,
+   "d_m": 0.9,
+   "cx_m": 27,
+   "onY_m": 0,
+   "komut": "ilerle",
+   "pilum": 0
+  },
+  {
+   "ad": "a-7",
+   "taraf": 0,
+   "hat": 1,
+   "grup": 6,
+   "kol": 18,
+   "sira": 8,
+   "w_m": 0.9,
+   "d_m": 0.9,
+   "cx_m": 45,
+   "onY_m": 0,
+   "komut": "ilerle",
+   "pilum": 0
+  },
+  {
+   "ad": "a-8",
+   "taraf": 0,
+   "hat": 1,
+   "grup": 7,
+   "kol": 18,
+   "sira": 8,
+   "w_m": 0.9,
+   "d_m": 0.9,
+   "cx_m": 63,
+   "onY_m": 0,
+   "komut": "ilerle",
+   "pilum": 0
+  },
+  {
+   "ad": "b-1",
+   "taraf": 1,
+   "hat": 1,
+   "grup": 0,
+   "kol": 18,
+   "sira": 8,
+   "w_m": 0.9,
+   "d_m": 0.9,
+   "cx_m": -63,
+   "onY_m": 60,
+   "komut": "ilerle",
+   "pilum": 0
+  },
+  {
+   "ad": "b-2",
+   "taraf": 1,
+   "hat": 1,
+   "grup": 1,
+   "kol": 18,
+   "sira": 8,
+   "w_m": 0.9,
+   "d_m": 0.9,
+   "cx_m": -45,
+   "onY_m": 60,
+   "komut": "ilerle",
+   "pilum": 0
+  },
+  {
+   "ad": "b-3",
+   "taraf": 1,
+   "hat": 1,
+   "grup": 2,
+   "kol": 18,
+   "sira": 8,
+   "w_m": 0.9,
+   "d_m": 0.9,
+   "cx_m": -27,
+   "onY_m": 60,
+   "komut": "ilerle",
+   "pilum": 0
+  },
+  {
+   "ad": "b-4",
+   "taraf": 1,
+   "hat": 1,
+   "grup": 3,
+   "kol": 18,
+   "sira": 8,
+   "w_m": 0.9,
+   "d_m": 0.9,
+   "cx_m": -9,
+   "onY_m": 60,
+   "komut": "ilerle",
+   "pilum": 0
+  },
+  {
+   "ad": "b-5",
+   "taraf": 1,
+   "hat": 1,
+   "grup": 4,
+   "kol": 18,
+   "sira": 8,
+   "w_m": 0.9,
+   "d_m": 0.9,
+   "cx_m": 9,
+   "onY_m": 60,
+   "komut": "ilerle",
+   "pilum": 0
+  },
+  {
+   "ad": "b-6",
+   "taraf": 1,
+   "hat": 1,
+   "grup": 5,
+   "kol": 18,
+   "sira": 8,
+   "w_m": 0.9,
+   "d_m": 0.9,
+   "cx_m": 27,
+   "onY_m": 60,
+   "komut": "ilerle",
+   "pilum": 0
+  },
+  {
+   "ad": "b-7",
+   "taraf": 1,
+   "hat": 1,
+   "grup": 6,
+   "kol": 18,
+   "sira": 8,
+   "w_m": 0.9,
+   "d_m": 0.9,
+   "cx_m": 45,
+   "onY_m": 60,
+   "komut": "ilerle",
+   "pilum": 0
+  },
+  {
+   "ad": "b-8",
+   "taraf": 1,
+   "hat": 1,
+   "grup": 7,
+   "kol": 18,
+   "sira": 8,
+   "w_m": 0.9,
+   "d_m": 0.9,
+   "cx_m": 63,
+   "onY_m": 60,
+   "komut": "ilerle",
+   "pilum": 0
+  }
+ ],
+ "olcu": {
+  "ad": "kazanan",
+  "tanim": "birincil: taraf 0 kazanma payı, karar verilenlerde (DENEY-PLANI §3)"
+ },
+ "durdurma": "bir tarafın (düşen + kaçan) payı q_taraf'ı (0,5) aşar ya da bütün birlikleri çözülür; t_max_s 3 saat (kararsız)",
+ "tohum_kok": 20261124,
+ "kayit_adim": 5,
+ "plan_surumu": "b02 v1.1 (KİLİTLİ 22 Kas 2026: kurucu \"Evet, kilitle\"; DENEY-PLANI v1.1)",
+ "parametreler": {
+  "dt_s": 0.2,
+  "t_max_s": {
+   "deger": 10800,
+   "etiket": "durdurma: 3 saat (kalibrasyon tur 4, a_birlik 8: süre ortancası 57 dk, tur4.log)"
+  },
+  "T_dayanma_dk": {
+   "deger": 8,
+   "aralik": [
+    2,
+    15
+   ],
+   "kaynak": "LS-25",
+   "etiket": "tahmin (ölçüm yok; LS-25: Sabin 2000 s. 10, saatler süren sürekli düello 'hayal edilemez'; ekranda tırnaklı alıntı yok)"
+  },
+  "T_toparlanma_dk": {
+   "deger": 15,
+   "aralik": [
+    5,
+    30
+   ],
+   "kaynak": "LS-26",
+   "etiket": "tahmin"
+  },
+  "T_dovus_s": {
+   "ort": 45,
+   "sd": 20,
+   "kaynak": "LS-23",
+   "etiket": "tahmin, kalibre (Sabin: 'kısa ve yerel' patlama; sayı yok; S16a bantta)"
+  },
+  "T_dinlenme_s": {
+   "ort": 90,
+   "sd": 45,
+   "aralik": [
+    {
+     "ort": 60,
+     "sd": 30
+    },
+    {
+     "ort": 300,
+     "sd": 150
+    }
+   ],
+   "kaynak": "LS-24",
+   "etiket": "tahmin, kalibre (Sabin: emniyet mesafesi; süre yok; duyarlılıkta 60-300 s)"
+  },
+  "lambda_vurus_1s": {
+   "deger": 0.2,
+   "aralik": [
+    0.2,
+    1
+   ],
+   "kaynak": "LS-20",
+   "etiket": "tahmin (Sabin dn. 45: 5 sn'de bir vuruş varsayımı)"
+  },
+  "p_isabet": {
+   "deger": 0.03,
+   "aralik": [
+    0.015,
+    0.045
+   ],
+   "kaynak": "LS-21",
+   "etiket": "tahmin, kalibre (saldırı başına ölüm 0,03 × 0,2 = %0,6 < Sabin dn. 45 %1)"
+  },
+  "p_olum": {
+   "deger": 0.2,
+   "aralik": [
+    0.1,
+    0.4
+   ],
+   "kaynak": "LS-22",
+   "etiket": "tahmin"
+  },
+  "a_birlik": {
+   "deger": 8,
+   "aralik": [
+    6,
+    12
+   ],
+   "kaynak": "kalibrasyon/KALIBRASYON.md (galip ölü bandı, Krentz 1985, HK-01)",
+   "etiket": "tahmin, kalibre (n0)"
+  },
+  "a_kayip": {
+   "deger": 1,
+   "kaynak": "pilot v3.1",
+   "etiket": "tahmin; kaçan = düşen varsayımı (e_bulasma ile eşit)"
+  },
+  "e_bulasma": {
+   "deger": 1,
+   "aralik": [
+    0,
+    2
+   ],
+   "kaynak": "pilot v3.1",
+   "etiket": "tahmin; kaçan da düşen gibi çevreye şok verir (a_kayip = e_bulasma): kaçan = düşen varsayımı"
+  },
+  "yara_M": 0.01,
+  "r_moral_1s": 0.001,
+  "b_yorgun_1s": 0.0005,
+  "d_yan_1s": 0.001,
+  "M_bozgun": {
+   "deger": 0.2,
+   "aralik": [
+    0.15,
+    0.3
+   ],
+   "kaynak": "LS-43",
+   "etiket": "tahmin"
+  },
+  "q_taraf": {
+   "deger": 0.5,
+   "aralik": [
+    0.4,
+    0.6
+   ],
+   "kaynak": "LS-47 (ölü + esir); model düşen + kaçan sayar",
+   "etiket": "tahmin; erken kaçan bu eşiğe doğrudan sayılır (OLGU-PLAN-V1 P1)"
+  },
+  "v_yuru_ms": {
+   "deger": 1.2,
+   "aralik": [
+    0.8,
+    1.5
+   ],
+   "kaynak": "LS-10, LS-17",
+   "etiket": "tahmin (Vegetius marş hızı ve Askew 15. yy zırh ölçümü; muharebe ilerleyişi değil)"
+  },
+  "cokunce_ilerle": true,
+  "yana_devral": {
+   "deger": true,
+   "kaynak": "TASARIM §2.8; Livius 8.8.9 ('in intervalla ordinum principes recipiebant. tum principum pugna erat'); ITIRAZCI-V3 #2, #3, #6",
+   "etiket": "model seçimi: öne geçen birlik çekilenin şeridine yana kayar ve izleyen düşmanı karşılar; yana kayma hiçbir kaynakta yok (modern okumalar arka hattı ileri yürütür: Veith s. 366, 368; Sabin s. 16); modelde kanat teması olmadığı için onun yerine geçer"
+  },
+  "kanat_siniri": {
+   "deger": true,
+   "kaynak": "Sabin 2000 s. 16 (arka birlikler aralığa girişi caydırır); Veith 1928 s. 359-360; karşı görüş Delbrück I³ s. 304, 457-458; kapsam: Veith s. 361 lejyona karşı lejyonu tartışmaz",
+   "etiket": "model seçimi: ilerleyen birlik bitişik düşman birliğin ön çizgisini geçmez (aralığa dalmaz); modelde kanat teması yok, dalış cezasız kalmasın diye yasak"
+  },
+  "kanat_m": 1,
+  "kayarken_temas_yok": {
+   "deger": true,
+   "kaynak": "TASARIM §2.8 \"v3.1 adayı\" ve \"v3.1 ve hız\"; çekirdek 9d0e24a, test T13",
+   "etiket": "model düzeltmesi (yapıntı giderme), parametre değil: yana kayan birlik (hedefCx dolu) ve karşısı kayma bitene dek yeni temas kurmaz; kayma bitince sonraki adımda kurulur. Kaymaya temasta başlayan birliğin cephesi bozulmaz (v3 planında yoklamada 0)"
+  },
+  "bos_cephe_dur": {
+   "deger": true,
+   "etiket": "model seçimi (OLGU-PARAMETRE #7): karşısı çözülen birlik durur; kapalıyken sonsuza yürür; n0 50 tohumun 22sinde sonucu değiştirir (bos_cephe_denetim.mjs); duyarlılık ucu bcd0"
+  },
+  "isaretli": {
+   "birlik": "a-4",
+   "kol": 9,
+   "sira": 2
+  }
+ },
+ "kosu_sayisi": 300,
+ "kollar": {
+  "olum25": {
+   "parametreler": {
+    "erken_kacan": {
+     "taraf": 0,
+     "N": 25,
+     "yer": "rastgele",
+     "tetik_s": 60,
+     "eylem": "olum"
+    }
+   },
+   "not": "varsayım denetimi: aynı 25 asker kaçmaz, ölür; a_kayip = e_bulasma iken o25 ile satır satır aynı beklenir (yapı)"
+  },
+  "ab6_n0": {
+   "parametreler": {
+    "a_birlik": 6
+   },
+   "not": "duyarlılık ucu ab6"
+  },
+  "ab6_o10": {
+   "parametreler": {
+    "a_birlik": 6,
+    "erken_kacan": {
+     "taraf": 0,
+     "N": 10,
+     "yer": "rastgele",
+     "tetik_s": 60,
+     "eylem": "kacis"
+    }
+   },
+   "not": "duyarlılık ucu ab6"
+  },
+  "ab6_o25": {
+   "parametreler": {
+    "a_birlik": 6,
+    "erken_kacan": {
+     "taraf": 0,
+     "N": 25,
+     "yer": "rastgele",
+     "tetik_s": 60,
+     "eylem": "kacis"
+    }
+   },
+   "not": "duyarlılık ucu ab6"
+  },
+  "ab6_o50": {
+   "parametreler": {
+    "a_birlik": 6,
+    "erken_kacan": {
+     "taraf": 0,
+     "N": 50,
+     "yer": "rastgele",
+     "tetik_s": 60,
+     "eylem": "kacis"
+    }
+   },
+   "not": "duyarlılık ucu ab6"
+  },
+  "ab12_n0": {
+   "parametreler": {
+    "a_birlik": 12
+   },
+   "not": "duyarlılık ucu ab12"
+  },
+  "ab12_o10": {
+   "parametreler": {
+    "a_birlik": 12,
+    "erken_kacan": {
+     "taraf": 0,
+     "N": 10,
+     "yer": "rastgele",
+     "tetik_s": 60,
+     "eylem": "kacis"
+    }
+   },
+   "not": "duyarlılık ucu ab12"
+  },
+  "ab12_o25": {
+   "parametreler": {
+    "a_birlik": 12,
+    "erken_kacan": {
+     "taraf": 0,
+     "N": 25,
+     "yer": "rastgele",
+     "tetik_s": 60,
+     "eylem": "kacis"
+    }
+   },
+   "not": "duyarlılık ucu ab12"
+  },
+  "ab12_o50": {
+   "parametreler": {
+    "a_birlik": 12,
+    "erken_kacan": {
+     "taraf": 0,
+     "N": 50,
+     "yer": "rastgele",
+     "tetik_s": 60,
+     "eylem": "kacis"
+    }
+   },
+   "not": "duyarlılık ucu ab12"
+  },
+  "eb0_n0": {
+   "parametreler": {
+    "e_bulasma": 0
+   },
+   "not": "duyarlılık ucu eb0"
+  },
+  "eb0_o10": {
+   "parametreler": {
+    "e_bulasma": 0,
+    "erken_kacan": {
+     "taraf": 0,
+     "N": 10,
+     "yer": "rastgele",
+     "tetik_s": 60,
+     "eylem": "kacis"
+    }
+   },
+   "not": "duyarlılık ucu eb0"
+  },
+  "eb0_o25": {
+   "parametreler": {
+    "e_bulasma": 0,
+    "erken_kacan": {
+     "taraf": 0,
+     "N": 25,
+     "yer": "rastgele",
+     "tetik_s": 60,
+     "eylem": "kacis"
+    }
+   },
+   "not": "duyarlılık ucu eb0"
+  },
+  "eb0_o50": {
+   "parametreler": {
+    "e_bulasma": 0,
+    "erken_kacan": {
+     "taraf": 0,
+     "N": 50,
+     "yer": "rastgele",
+     "tetik_s": 60,
+     "eylem": "kacis"
+    }
+   },
+   "not": "duyarlılık ucu eb0"
+  },
+  "eb2_n0": {
+   "parametreler": {
+    "e_bulasma": 2
+   },
+   "not": "duyarlılık ucu eb2"
+  },
+  "eb2_o10": {
+   "parametreler": {
+    "e_bulasma": 2,
+    "erken_kacan": {
+     "taraf": 0,
+     "N": 10,
+     "yer": "rastgele",
+     "tetik_s": 60,
+     "eylem": "kacis"
+    }
+   },
+   "not": "duyarlılık ucu eb2"
+  },
+  "eb2_o25": {
+   "parametreler": {
+    "e_bulasma": 2,
+    "erken_kacan": {
+     "taraf": 0,
+     "N": 25,
+     "yer": "rastgele",
+     "tetik_s": 60,
+     "eylem": "kacis"
+    }
+   },
+   "not": "duyarlılık ucu eb2"
+  },
+  "eb2_o50": {
+   "parametreler": {
+    "e_bulasma": 2,
+    "erken_kacan": {
+     "taraf": 0,
+     "N": 50,
+     "yer": "rastgele",
+     "tetik_s": 60,
+     "eylem": "kacis"
+    }
+   },
+   "not": "duyarlılık ucu eb2"
+  },
+  "td4_n0": {
+   "parametreler": {
+    "T_dayanma_dk": 4
+   },
+   "not": "duyarlılık ucu td4"
+  },
+  "td4_o10": {
+   "parametreler": {
+    "T_dayanma_dk": 4,
+    "erken_kacan": {
+     "taraf": 0,
+     "N": 10,
+     "yer": "rastgele",
+     "tetik_s": 60,
+     "eylem": "kacis"
+    }
+   },
+   "not": "duyarlılık ucu td4"
+  },
+  "td4_o25": {
+   "parametreler": {
+    "T_dayanma_dk": 4,
+    "erken_kacan": {
+     "taraf": 0,
+     "N": 25,
+     "yer": "rastgele",
+     "tetik_s": 60,
+     "eylem": "kacis"
+    }
+   },
+   "not": "duyarlılık ucu td4"
+  },
+  "td4_o50": {
+   "parametreler": {
+    "T_dayanma_dk": 4,
+    "erken_kacan": {
+     "taraf": 0,
+     "N": 50,
+     "yer": "rastgele",
+     "tetik_s": 60,
+     "eylem": "kacis"
+    }
+   },
+   "not": "duyarlılık ucu td4"
+  },
+  "td15_n0": {
+   "parametreler": {
+    "T_dayanma_dk": 15
+   },
+   "not": "duyarlılık ucu td15"
+  },
+  "td15_o10": {
+   "parametreler": {
+    "T_dayanma_dk": 15,
+    "erken_kacan": {
+     "taraf": 0,
+     "N": 10,
+     "yer": "rastgele",
+     "tetik_s": 60,
+     "eylem": "kacis"
+    }
+   },
+   "not": "duyarlılık ucu td15"
+  },
+  "td15_o25": {
+   "parametreler": {
+    "T_dayanma_dk": 15,
+    "erken_kacan": {
+     "taraf": 0,
+     "N": 25,
+     "yer": "rastgele",
+     "tetik_s": 60,
+     "eylem": "kacis"
+    }
+   },
+   "not": "duyarlılık ucu td15"
+  },
+  "td15_o50": {
+   "parametreler": {
+    "T_dayanma_dk": 15,
+    "erken_kacan": {
+     "taraf": 0,
+     "N": 50,
+     "yer": "rastgele",
+     "tetik_s": 60,
+     "eylem": "kacis"
+    }
+   },
+   "not": "duyarlılık ucu td15"
+  },
+  "nbz_n0": {
+   "parametreler": {
+    "nabiz": false
+   },
+   "not": "duyarlılık ucu nbz"
+  },
+  "nbz_o10": {
+   "parametreler": {
+    "nabiz": false,
+    "erken_kacan": {
+     "taraf": 0,
+     "N": 10,
+     "yer": "rastgele",
+     "tetik_s": 60,
+     "eylem": "kacis"
+    }
+   },
+   "not": "duyarlılık ucu nbz"
+  },
+  "nbz_o25": {
+   "parametreler": {
+    "nabiz": false,
+    "erken_kacan": {
+     "taraf": 0,
+     "N": 25,
+     "yer": "rastgele",
+     "tetik_s": 60,
+     "eylem": "kacis"
+    }
+   },
+   "not": "duyarlılık ucu nbz"
+  },
+  "nbz_o50": {
+   "parametreler": {
+    "nabiz": false,
+    "erken_kacan": {
+     "taraf": 0,
+     "N": 50,
+     "yer": "rastgele",
+     "tetik_s": 60,
+     "eylem": "kacis"
+    }
+   },
+   "not": "duyarlılık ucu nbz"
+  },
+  "qt40_n0": {
+   "parametreler": {
+    "q_taraf": 0.4
+   },
+   "not": "duyarlılık ucu qt40"
+  },
+  "qt40_o10": {
+   "parametreler": {
+    "q_taraf": 0.4,
+    "erken_kacan": {
+     "taraf": 0,
+     "N": 10,
+     "yer": "rastgele",
+     "tetik_s": 60,
+     "eylem": "kacis"
+    }
+   },
+   "not": "duyarlılık ucu qt40"
+  },
+  "qt40_o25": {
+   "parametreler": {
+    "q_taraf": 0.4,
+    "erken_kacan": {
+     "taraf": 0,
+     "N": 25,
+     "yer": "rastgele",
+     "tetik_s": 60,
+     "eylem": "kacis"
+    }
+   },
+   "not": "duyarlılık ucu qt40"
+  },
+  "qt40_o50": {
+   "parametreler": {
+    "q_taraf": 0.4,
+    "erken_kacan": {
+     "taraf": 0,
+     "N": 50,
+     "yer": "rastgele",
+     "tetik_s": 60,
+     "eylem": "kacis"
+    }
+   },
+   "not": "duyarlılık ucu qt40"
+  },
+  "qt60_n0": {
+   "parametreler": {
+    "q_taraf": 0.6
+   },
+   "not": "duyarlılık ucu qt60"
+  },
+  "qt60_o10": {
+   "parametreler": {
+    "q_taraf": 0.6,
+    "erken_kacan": {
+     "taraf": 0,
+     "N": 10,
+     "yer": "rastgele",
+     "tetik_s": 60,
+     "eylem": "kacis"
+    }
+   },
+   "not": "duyarlılık ucu qt60"
+  },
+  "qt60_o25": {
+   "parametreler": {
+    "q_taraf": 0.6,
+    "erken_kacan": {
+     "taraf": 0,
+     "N": 25,
+     "yer": "rastgele",
+     "tetik_s": 60,
+     "eylem": "kacis"
+    }
+   },
+   "not": "duyarlılık ucu qt60"
+  },
+  "qt60_o50": {
+   "parametreler": {
+    "q_taraf": 0.6,
+    "erken_kacan": {
+     "taraf": 0,
+     "N": 50,
+     "yer": "rastgele",
+     "tetik_s": 60,
+     "eylem": "kacis"
+    }
+   },
+   "not": "duyarlılık ucu qt60"
+  },
+  "bcd0_n0": {
+   "parametreler": {
+    "bos_cephe_dur": false
+   },
+   "not": "duyarlılık ucu bcd0"
+  },
+  "bcd0_o10": {
+   "parametreler": {
+    "bos_cephe_dur": false,
+    "erken_kacan": {
+     "taraf": 0,
+     "N": 10,
+     "yer": "rastgele",
+     "tetik_s": 60,
+     "eylem": "kacis"
+    }
+   },
+   "not": "duyarlılık ucu bcd0"
+  },
+  "bcd0_o25": {
+   "parametreler": {
+    "bos_cephe_dur": false,
+    "erken_kacan": {
+     "taraf": 0,
+     "N": 25,
+     "yer": "rastgele",
+     "tetik_s": 60,
+     "eylem": "kacis"
+    }
+   },
+   "not": "duyarlılık ucu bcd0"
+  },
+  "bcd0_o50": {
+   "parametreler": {
+    "bos_cephe_dur": false,
+    "erken_kacan": {
+     "taraf": 0,
+     "N": 50,
+     "yer": "rastgele",
+     "tetik_s": 60,
+     "eylem": "kacis"
+    }
+   },
+   "not": "duyarlılık ucu bcd0"
+  },
+  "tt300_o10": {
+   "parametreler": {
+    "erken_kacan": {
+     "taraf": 0,
+     "N": 10,
+     "yer": "rastgele",
+     "tetik_s": 300,
+     "eylem": "kacis"
+    }
+   },
+   "not": "duyarlılık: tetik ilk temas + 300 sn"
+  },
+  "tt300_o25": {
+   "parametreler": {
+    "erken_kacan": {
+     "taraf": 0,
+     "N": 25,
+     "yer": "rastgele",
+     "tetik_s": 300,
+     "eylem": "kacis"
+    }
+   },
+   "not": "duyarlılık: tetik ilk temas + 300 sn"
+  },
+  "tt300_o50": {
+   "parametreler": {
+    "erken_kacan": {
+     "taraf": 0,
+     "N": 50,
+     "yer": "rastgele",
+     "tetik_s": 300,
+     "eylem": "kacis"
+    }
+   },
+   "not": "duyarlılık: tetik ilk temas + 300 sn"
+  }
+ },
+ "sonuc": {
+  "calistirildi": "2026-11-22T16:54:35.000Z",
+  "git_sha": "160de58",
+  "plan_kirli": false,
+  "node": "v24.2.0",
+  "isci": 8,
+  "kollar": {
+   "olum25": {
+    "kosu": 300,
+    "olcu": "kazanan",
+    "p5": 1,
+    "p50": 1,
+    "p95": 1,
+    "ort": 1,
+    "sansur": 0,
+    "sansur_not": null,
+    "kazanma_payi_taraf0": 0.047,
+    "kazanma_payi_taraf1": 0.953,
+    "sure_p50": 2299.9,
+    "degisim_ort": 0,
+    "kayip": [
+     {
+      "dusen_pay": 0.0707,
+      "kacan_pay": 0.4601
+     },
+     {
+      "dusen_pay": 0.0491,
+      "kacan_pay": 0.0588
+     }
+    ]
+   },
+   "ab6_n0": {
+    "kosu": 300,
+    "olcu": "kazanan",
+    "p5": 0,
+    "p50": 0,
+    "p95": 1,
+    "ort": 0.5,
+    "sansur": 0,
+    "sansur_not": null,
+    "kazanma_payi_taraf0": 0.51,
+    "kazanma_payi_taraf1": 0.49,
+    "sure_p50": 4758.7,
+    "degisim_ort": 0,
+    "kayip": [
+     {
+      "dusen_pay": 0.0896,
+      "kacan_pay": 0.2779
+     },
+     {
+      "dusen_pay": 0.0899,
+      "kacan_pay": 0.2818
+     }
+    ]
+   },
+   "ab6_o10": {
+    "kosu": 300,
+    "olcu": "kazanan",
+    "p5": 0,
+    "p50": 1,
+    "p95": 1,
+    "ort": 0.7,
+    "sansur": 0,
+    "sansur_not": null,
+    "kazanma_payi_taraf0": 0.3,
+    "kazanma_payi_taraf1": 0.7,
+    "sure_p50": 4407.6,
+    "degisim_ort": 0,
+    "kayip": [
+     {
+      "dusen_pay": 0.0841,
+      "kacan_pay": 0.3672
+     },
+     {
+      "dusen_pay": 0.0846,
+      "kacan_pay": 0.1869
+     }
+    ]
+   },
+   "ab6_o25": {
+    "kosu": 300,
+    "olcu": "kazanan",
+    "p5": 0,
+    "p50": 1,
+    "p95": 1,
+    "ort": 0.9,
+    "sansur": 0,
+    "sansur_not": null,
+    "kazanma_payi_taraf0": 0.103,
+    "kazanma_payi_taraf1": 0.897,
+    "sure_p50": 3754.7,
+    "degisim_ort": 0,
+    "kayip": [
+     {
+      "dusen_pay": 0.0737,
+      "kacan_pay": 0.4475
+     },
+     {
+      "dusen_pay": 0.0737,
+      "kacan_pay": 0.0858
+     }
+    ]
+   },
+   "ab6_o50": {
+    "kosu": 300,
+    "olcu": "kazanan",
+    "p5": 1,
+    "p50": 1,
+    "p95": 1,
+    "ort": 1,
+    "sansur": 0,
+    "sansur_not": null,
+    "kazanma_payi_taraf0": 0.003,
+    "kazanma_payi_taraf1": 0.997,
+    "sure_p50": 2467.6,
+    "degisim_ort": 0,
+    "kayip": [
+     {
+      "dusen_pay": 0.0527,
+      "kacan_pay": 0.4965
+     },
+     {
+      "dusen_pay": 0.0528,
+      "kacan_pay": 0.0108
+     }
+    ]
+   },
+   "ab12_n0": {
+    "kosu": 300,
+    "olcu": "kazanan",
+    "p5": 0,
+    "p50": 0,
+    "p95": 1,
+    "ort": 0.5,
+    "sansur": 0,
+    "sansur_not": null,
+    "kazanma_payi_taraf0": 0.517,
+    "kazanma_payi_taraf1": 0.483,
+    "sure_p50": 1882.8,
+    "degisim_ort": 0,
+    "kayip": [
+     {
+      "dusen_pay": 0.0417,
+      "kacan_pay": 0.3112
+     },
+     {
+      "dusen_pay": 0.0419,
+      "kacan_pay": 0.3078
+     }
+    ]
+   },
+   "ab12_o10": {
+    "kosu": 300,
+    "olcu": "kazanan",
+    "p5": 0,
+    "p50": 1,
+    "p95": 1,
+    "ort": 0.8,
+    "sansur": 0,
+    "sansur_not": null,
+    "kazanma_payi_taraf0": 0.21,
+    "kazanma_payi_taraf1": 0.79,
+    "sure_p50": 1540.7,
+    "degisim_ort": 0,
+    "kayip": [
+     {
+      "dusen_pay": 0.0368,
+      "kacan_pay": 0.4279
+     },
+     {
+      "dusen_pay": 0.0371,
+      "kacan_pay": 0.1759
+     }
+    ]
+   },
+   "ab12_o25": {
+    "kosu": 300,
+    "olcu": "kazanan",
+    "p5": 1,
+    "p50": 1,
+    "p95": 1,
+    "ort": 1,
+    "sansur": 0,
+    "sansur_not": null,
+    "kazanma_payi_taraf0": 0.01,
+    "kazanma_payi_taraf1": 0.99,
+    "sure_p50": 812.1,
+    "degisim_ort": 0,
+    "kayip": [
+     {
+      "dusen_pay": 0.0252,
+      "kacan_pay": 0.5059
+     },
+     {
+      "dusen_pay": 0.0253,
+      "kacan_pay": 0.033
+     }
+    ]
+   },
+   "ab12_o50": {
+    "kosu": 300,
+    "olcu": "kazanan",
+    "p5": 1,
+    "p50": 1,
+    "p95": 1,
+    "ort": 1,
+    "sansur": 0,
+    "sansur_not": null,
+    "kazanma_payi_taraf0": 0,
+    "kazanma_payi_taraf1": 1,
+    "sure_p50": 79.2,
+    "degisim_ort": 0,
+    "kayip": [
+     {
+      "dusen_pay": 0.0062,
+      "kacan_pay": 0.5537
+     },
+     {
+      "dusen_pay": 0.006,
+      "kacan_pay": 0
+     }
+    ]
+   },
+   "eb0_n0": {
+    "kosu": 300,
+    "olcu": "kazanan",
+    "p5": 0,
+    "p50": 0.5,
+    "p95": 1,
+    "ort": 0.5,
+    "sansur": 0,
+    "sansur_not": null,
+    "kazanma_payi_taraf0": 0.5,
+    "kazanma_payi_taraf1": 0.5,
+    "sure_p50": 4494.4,
+    "degisim_ort": 0,
+    "kayip": [
+     {
+      "dusen_pay": 0.0775,
+      "kacan_pay": 0.3359
+     },
+     {
+      "dusen_pay": 0.0776,
+      "kacan_pay": 0.3321
+     }
+    ]
+   },
+   "eb0_o10": {
+    "kosu": 300,
+    "olcu": "kazanan",
+    "p5": 0,
+    "p50": 1,
+    "p95": 1,
+    "ort": 0.8,
+    "sansur": 0,
+    "sansur_not": null,
+    "kazanma_payi_taraf0": 0.25,
+    "kazanma_payi_taraf1": 0.75,
+    "sure_p50": 4104.1,
+    "degisim_ort": 0,
+    "kayip": [
+     {
+      "dusen_pay": 0.0722,
+      "kacan_pay": 0.4097
+     },
+     {
+      "dusen_pay": 0.0721,
+      "kacan_pay": 0.2265
+     }
+    ]
+   },
+   "eb0_o25": {
+    "kosu": 300,
+    "olcu": "kazanan",
+    "p5": 1,
+    "p50": 1,
+    "p95": 1,
+    "ort": 1,
+    "sansur": 0,
+    "sansur_not": null,
+    "kazanma_payi_taraf0": 0.047,
+    "kazanma_payi_taraf1": 0.953,
+    "sure_p50": 3225.6,
+    "degisim_ort": 0,
+    "kayip": [
+     {
+      "dusen_pay": 0.0605,
+      "kacan_pay": 0.4675
+     },
+     {
+      "dusen_pay": 0.0601,
+      "kacan_pay": 0.0982
+     }
+    ]
+   },
+   "eb0_o50": {
+    "kosu": 300,
+    "olcu": "kazanan",
+    "p5": 1,
+    "p50": 1,
+    "p95": 1,
+    "ort": 1,
+    "sansur": 0,
+    "sansur_not": null,
+    "kazanma_payi_taraf0": 0,
+    "kazanma_payi_taraf1": 1,
+    "sure_p50": 1799.7,
+    "degisim_ort": 0,
+    "kayip": [
+     {
+      "dusen_pay": 0.0395,
+      "kacan_pay": 0.4956
+     },
+     {
+      "dusen_pay": 0.0387,
+      "kacan_pay": 0.0076
+     }
+    ]
+   },
+   "eb2_n0": {
+    "kosu": 300,
+    "olcu": "kazanan",
+    "p5": 0,
+    "p50": 1,
+    "p95": 1,
+    "ort": 0.5,
+    "sansur": 0,
+    "sansur_not": null,
+    "kazanma_payi_taraf0": 0.49,
+    "kazanma_payi_taraf1": 0.51,
+    "sure_p50": 2495.3,
+    "degisim_ort": 0,
+    "kayip": [
+     {
+      "dusen_pay": 0.0554,
+      "kacan_pay": 0.2603
+     },
+     {
+      "dusen_pay": 0.0555,
+      "kacan_pay": 0.245
+     }
+    ]
+   },
+   "eb2_o10": {
+    "kosu": 300,
+    "olcu": "kazanan",
+    "p5": 0,
+    "p50": 1,
+    "p95": 1,
+    "ort": 0.7,
+    "sansur": 0,
+    "sansur_not": null,
+    "kazanma_payi_taraf0": 0.257,
+    "kazanma_payi_taraf1": 0.743,
+    "sure_p50": 2107,
+    "degisim_ort": 0,
+    "kayip": [
+     {
+      "dusen_pay": 0.05,
+      "kacan_pay": 0.3867
+     },
+     {
+      "dusen_pay": 0.0503,
+      "kacan_pay": 0.1291
+     }
+    ]
+   },
+   "eb2_o25": {
+    "kosu": 300,
+    "olcu": "kazanan",
+    "p5": 0,
+    "p50": 1,
+    "p95": 1,
+    "ort": 0.9,
+    "sansur": 0,
+    "sansur_not": null,
+    "kazanma_payi_taraf0": 0.063,
+    "kazanma_payi_taraf1": 0.937,
+    "sure_p50": 1452.8,
+    "degisim_ort": 0,
+    "kayip": [
+     {
+      "dusen_pay": 0.0379,
+      "kacan_pay": 0.4927
+     },
+     {
+      "dusen_pay": 0.0378,
+      "kacan_pay": 0.0367
+     }
+    ]
+   },
+   "eb2_o50": {
+    "kosu": 300,
+    "olcu": "kazanan",
+    "p5": 1,
+    "p50": 1,
+    "p95": 1,
+    "ort": 1,
+    "sansur": 0,
+    "sansur_not": null,
+    "kazanma_payi_taraf0": 0,
+    "kazanma_payi_taraf1": 1,
+    "sure_p50": 79.4,
+    "degisim_ort": 0,
+    "kayip": [
+     {
+      "dusen_pay": 0.0075,
+      "kacan_pay": 0.5674
+     },
+     {
+      "dusen_pay": 0.0073,
+      "kacan_pay": 0
+     }
+    ]
+   },
+   "td4_n0": {
+    "kosu": 300,
+    "olcu": "kazanan",
+    "p5": 0,
+    "p50": 1,
+    "p95": 1,
+    "ort": 0.6,
+    "sansur": 0,
+    "sansur_not": null,
+    "kazanma_payi_taraf0": 0.427,
+    "kazanma_payi_taraf1": 0.573,
+    "sure_p50": 3939.2,
+    "degisim_ort": 0,
+    "kayip": [
+     {
+      "dusen_pay": 0.0661,
+      "kacan_pay": 0.3154
+     },
+     {
+      "dusen_pay": 0.0652,
+      "kacan_pay": 0.276
+     }
+    ]
+   },
+   "td4_o10": {
+    "kosu": 300,
+    "olcu": "kazanan",
+    "p5": 0,
+    "p50": 1,
+    "p95": 1,
+    "ort": 0.8,
+    "sansur": 0,
+    "sansur_not": null,
+    "kazanma_payi_taraf0": 0.21,
+    "kazanma_payi_taraf1": 0.79,
+    "sure_p50": 3620,
+    "degisim_ort": 0,
+    "kayip": [
+     {
+      "dusen_pay": 0.0603,
+      "kacan_pay": 0.4175
+     },
+     {
+      "dusen_pay": 0.0596,
+      "kacan_pay": 0.1664
+     }
+    ]
+   },
+   "td4_o25": {
+    "kosu": 300,
+    "olcu": "kazanan",
+    "p5": 0,
+    "p50": 1,
+    "p95": 1,
+    "ort": 0.9,
+    "sansur": 0,
+    "sansur_not": null,
+    "kazanma_payi_taraf0": 0.053,
+    "kazanma_payi_taraf1": 0.947,
+    "sure_p50": 2828.1,
+    "degisim_ort": 0,
+    "kayip": [
+     {
+      "dusen_pay": 0.0497,
+      "kacan_pay": 0.4797
+     },
+     {
+      "dusen_pay": 0.0486,
+      "kacan_pay": 0.0681
+     }
+    ]
+   },
+   "td4_o50": {
+    "kosu": 300,
+    "olcu": "kazanan",
+    "p5": 1,
+    "p50": 1,
+    "p95": 1,
+    "ort": 1,
+    "sansur": 0,
+    "sansur_not": null,
+    "kazanma_payi_taraf0": 0,
+    "kazanma_payi_taraf1": 1,
+    "sure_p50": 1442.6,
+    "degisim_ort": 0,
+    "kayip": [
+     {
+      "dusen_pay": 0.0276,
+      "kacan_pay": 0.5145
+     },
+     {
+      "dusen_pay": 0.0269,
+      "kacan_pay": 0.0034
+     }
+    ]
+   },
+   "td15_n0": {
+    "kosu": 300,
+    "olcu": "kazanan",
+    "p5": 0,
+    "p50": 0,
+    "p95": 1,
+    "ort": 0.5,
+    "sansur": 0,
+    "sansur_not": null,
+    "kazanma_payi_taraf0": 0.51,
+    "kazanma_payi_taraf1": 0.49,
+    "sure_p50": 2484,
+    "degisim_ort": 0,
+    "kayip": [
+     {
+      "dusen_pay": 0.0653,
+      "kacan_pay": 0.2982
+     },
+     {
+      "dusen_pay": 0.0663,
+      "kacan_pay": 0.2921
+     }
+    ]
+   },
+   "td15_o10": {
+    "kosu": 300,
+    "olcu": "kazanan",
+    "p5": 0,
+    "p50": 1,
+    "p95": 1,
+    "ort": 0.8,
+    "sansur": 0,
+    "sansur_not": null,
+    "kazanma_payi_taraf0": 0.247,
+    "kazanma_payi_taraf1": 0.753,
+    "sure_p50": 2232.4,
+    "degisim_ort": 0,
+    "kayip": [
+     {
+      "dusen_pay": 0.0606,
+      "kacan_pay": 0.3948
+     },
+     {
+      "dusen_pay": 0.0608,
+      "kacan_pay": 0.1818
+     }
+    ]
+   },
+   "td15_o25": {
+    "kosu": 300,
+    "olcu": "kazanan",
+    "p5": 1,
+    "p50": 1,
+    "p95": 1,
+    "ort": 1,
+    "sansur": 0,
+    "sansur_not": null,
+    "kazanma_payi_taraf0": 0.047,
+    "kazanma_payi_taraf1": 0.953,
+    "sure_p50": 1565.7,
+    "degisim_ort": 0,
+    "kayip": [
+     {
+      "dusen_pay": 0.0493,
+      "kacan_pay": 0.4813
+     },
+     {
+      "dusen_pay": 0.0484,
+      "kacan_pay": 0.0593
+     }
+    ]
+   },
+   "td15_o50": {
+    "kosu": 300,
+    "olcu": "kazanan",
+    "p5": 1,
+    "p50": 1,
+    "p95": 1,
+    "ort": 1,
+    "sansur": 0,
+    "sansur_not": null,
+    "kazanma_payi_taraf0": 0.003,
+    "kazanma_payi_taraf1": 0.997,
+    "sure_p50": 783.3,
+    "degisim_ort": 0,
+    "kayip": [
+     {
+      "dusen_pay": 0.0276,
+      "kacan_pay": 0.515
+     },
+     {
+      "dusen_pay": 0.0274,
+      "kacan_pay": 0.005
+     }
+    ]
+   },
+   "nbz_n0": {
+    "kosu": 300,
+    "olcu": "kazanan",
+    "p5": 0,
+    "p50": 1,
+    "p95": 1,
+    "ort": 0.5,
+    "sansur": 0,
+    "sansur_not": null,
+    "kazanma_payi_taraf0": 0.48,
+    "kazanma_payi_taraf1": 0.52,
+    "sure_p50": 549.2,
+    "degisim_ort": 0,
+    "kayip": [
+     {
+      "dusen_pay": 0.0435,
+      "kacan_pay": 0.3134
+     },
+     {
+      "dusen_pay": 0.0435,
+      "kacan_pay": 0.292
+     }
+    ]
+   },
+   "nbz_o10": {
+    "kosu": 300,
+    "olcu": "kazanan",
+    "p5": 0,
+    "p50": 1,
+    "p95": 1,
+    "ort": 0.8,
+    "sansur": 0,
+    "sansur_not": null,
+    "kazanma_payi_taraf0": 0.203,
+    "kazanma_payi_taraf1": 0.797,
+    "sure_p50": 494.3,
+    "degisim_ort": 0,
+    "kayip": [
+     {
+      "dusen_pay": 0.0407,
+      "kacan_pay": 0.4221
+     },
+     {
+      "dusen_pay": 0.0407,
+      "kacan_pay": 0.1722
+     }
+    ]
+   },
+   "nbz_o25": {
+    "kosu": 300,
+    "olcu": "kazanan",
+    "p5": 1,
+    "p50": 1,
+    "p95": 1,
+    "ort": 1,
+    "sansur": 0,
+    "sansur_not": null,
+    "kazanma_payi_taraf0": 0.007,
+    "kazanma_payi_taraf1": 0.993,
+    "sure_p50": 371,
+    "degisim_ort": 0,
+    "kayip": [
+     {
+      "dusen_pay": 0.0336,
+      "kacan_pay": 0.4939
+     },
+     {
+      "dusen_pay": 0.0334,
+      "kacan_pay": 0.0371
+     }
+    ]
+   },
+   "nbz_o50": {
+    "kosu": 300,
+    "olcu": "kazanan",
+    "p5": 1,
+    "p50": 1,
+    "p95": 1,
+    "ort": 1,
+    "sansur": 0,
+    "sansur_not": null,
+    "kazanma_payi_taraf0": 0,
+    "kazanma_payi_taraf1": 1,
+    "sure_p50": 162.2,
+    "degisim_ort": 0,
+    "kayip": [
+     {
+      "dusen_pay": 0.017,
+      "kacan_pay": 0.5205
+     },
+     {
+      "dusen_pay": 0.017,
+      "kacan_pay": 0.0008
+     }
+    ]
+   },
+   "qt40_n0": {
+    "kosu": 300,
+    "olcu": "kazanan",
+    "p5": 0,
+    "p50": 1,
+    "p95": 1,
+    "ort": 0.5,
+    "sansur": 0,
+    "sansur_not": null,
+    "kazanma_payi_taraf0": 0.467,
+    "kazanma_payi_taraf1": 0.533,
+    "sure_p50": 3020.2,
+    "degisim_ort": 0,
+    "kayip": [
+     {
+      "dusen_pay": 0.0631,
+      "kacan_pay": 0.224
+     },
+     {
+      "dusen_pay": 0.0632,
+      "kacan_pay": 0.2058
+     }
+    ]
+   },
+   "qt40_o10": {
+    "kosu": 300,
+    "olcu": "kazanan",
+    "p5": 0,
+    "p50": 1,
+    "p95": 1,
+    "ort": 0.8,
+    "sansur": 0,
+    "sansur_not": null,
+    "kazanma_payi_taraf0": 0.217,
+    "kazanma_payi_taraf1": 0.783,
+    "sure_p50": 2649.7,
+    "degisim_ort": 0,
+    "kayip": [
+     {
+      "dusen_pay": 0.057,
+      "kacan_pay": 0.3039
+     },
+     {
+      "dusen_pay": 0.0568,
+      "kacan_pay": 0.1095
+     }
+    ]
+   },
+   "qt40_o25": {
+    "kosu": 300,
+    "olcu": "kazanan",
+    "p5": 0,
+    "p50": 1,
+    "p95": 1,
+    "ort": 0.9,
+    "sansur": 0,
+    "sansur_not": null,
+    "kazanma_payi_taraf0": 0.053,
+    "kazanma_payi_taraf1": 0.947,
+    "sure_p50": 1958.8,
+    "degisim_ort": 0,
+    "kayip": [
+     {
+      "dusen_pay": 0.0459,
+      "kacan_pay": 0.3704
+     },
+     {
+      "dusen_pay": 0.0458,
+      "kacan_pay": 0.0399
+     }
+    ]
+   },
+   "qt40_o50": {
+    "kosu": 300,
+    "olcu": "kazanan",
+    "p5": 1,
+    "p50": 1,
+    "p95": 1,
+    "ort": 1,
+    "sansur": 0,
+    "sansur_not": null,
+    "kazanma_payi_taraf0": 0,
+    "kazanma_payi_taraf1": 1,
+    "sure_p50": 757.6,
+    "degisim_ort": 0,
+    "kayip": [
+     {
+      "dusen_pay": 0.0237,
+      "kacan_pay": 0.4031
+     },
+     {
+      "dusen_pay": 0.0235,
+      "kacan_pay": 0.0011
+     }
+    ]
+   },
+   "qt60_n0": {
+    "kosu": 300,
+    "olcu": "kazanan",
+    "p5": 0,
+    "p50": 1,
+    "p95": 1,
+    "ort": 0.6,
+    "sansur": 13,
+    "sansur_not": "13 koşuda ölçü oluşmadı (t_max 10800 s içinde); dağılım yalnız oluşanlardan",
+    "kazanma_payi_taraf0": 0.43,
+    "kazanma_payi_taraf1": 0.527,
+    "sure_p50": 3870,
+    "degisim_ort": 0,
+    "kayip": [
+     {
+      "dusen_pay": 0.0692,
+      "kacan_pay": 0.4073
+     },
+     {
+      "dusen_pay": 0.0693,
+      "kacan_pay": 0.3742
+     }
+    ]
+   },
+   "qt60_o10": {
+    "kosu": 300,
+    "olcu": "kazanan",
+    "p5": 0,
+    "p50": 1,
+    "p95": 1,
+    "ort": 0.8,
+    "sansur": 4,
+    "sansur_not": "4 koşuda ölçü oluşmadı (t_max 10800 s içinde); dağılım yalnız oluşanlardan",
+    "kazanma_payi_taraf0": 0.23,
+    "kazanma_payi_taraf1": 0.757,
+    "sure_p50": 3381.5,
+    "degisim_ort": 0,
+    "kayip": [
+     {
+      "dusen_pay": 0.0628,
+      "kacan_pay": 0.5139
+     },
+     {
+      "dusen_pay": 0.0625,
+      "kacan_pay": 0.229
+     }
+    ]
+   },
+   "qt60_o25": {
+    "kosu": 300,
+    "olcu": "kazanan",
+    "p5": 1,
+    "p50": 1,
+    "p95": 1,
+    "ort": 1,
+    "sansur": 9,
+    "sansur_not": "9 koşuda ölçü oluşmadı (t_max 10800 s içinde); dağılım yalnız oluşanlardan",
+    "kazanma_payi_taraf0": 0.047,
+    "kazanma_payi_taraf1": 0.923,
+    "sure_p50": 2622.2,
+    "degisim_ort": 0,
+    "kayip": [
+     {
+      "dusen_pay": 0.0516,
+      "kacan_pay": 0.5855
+     },
+     {
+      "dusen_pay": 0.0517,
+      "kacan_pay": 0.0949
+     }
+    ]
+   },
+   "qt60_o50": {
+    "kosu": 300,
+    "olcu": "kazanan",
+    "p5": 1,
+    "p50": 1,
+    "p95": 1,
+    "ort": 1,
+    "sansur": 0,
+    "sansur_not": null,
+    "kazanma_payi_taraf0": 0,
+    "kazanma_payi_taraf1": 1,
+    "sure_p50": 1173.1,
+    "degisim_ort": 0,
+    "kayip": [
+     {
+      "dusen_pay": 0.0293,
+      "kacan_pay": 0.6254
+     },
+     {
+      "dusen_pay": 0.0291,
+      "kacan_pay": 0.0065
+     }
+    ]
+   },
+   "bcd0_n0": {
+    "kosu": 300,
+    "olcu": "kazanan",
+    "p5": 0,
+    "p50": 1,
+    "p95": 1,
+    "ort": 0.5,
+    "sansur": 0,
+    "sansur_not": null,
+    "kazanma_payi_taraf0": 0.493,
+    "kazanma_payi_taraf1": 0.507,
+    "sure_p50": 3385.5,
+    "degisim_ort": 0,
+    "kayip": [
+     {
+      "dusen_pay": 0.0667,
+      "kacan_pay": 0.3044
+     },
+     {
+      "dusen_pay": 0.0666,
+      "kacan_pay": 0.2915
+     }
+    ]
+   },
+   "bcd0_o10": {
+    "kosu": 300,
+    "olcu": "kazanan",
+    "p5": 0,
+    "p50": 1,
+    "p95": 1,
+    "ort": 0.8,
+    "sansur": 0,
+    "sansur_not": null,
+    "kazanma_payi_taraf0": 0.233,
+    "kazanma_payi_taraf1": 0.767,
+    "sure_p50": 2924,
+    "degisim_ort": 0,
+    "kayip": [
+     {
+      "dusen_pay": 0.0603,
+      "kacan_pay": 0.4081
+     },
+     {
+      "dusen_pay": 0.06,
+      "kacan_pay": 0.1696
+     }
+    ]
+   },
+   "bcd0_o25": {
+    "kosu": 300,
+    "olcu": "kazanan",
+    "p5": 0,
+    "p50": 1,
+    "p95": 1,
+    "ort": 0.9,
+    "sansur": 0,
+    "sansur_not": null,
+    "kazanma_payi_taraf0": 0.053,
+    "kazanma_payi_taraf1": 0.947,
+    "sure_p50": 2297.8,
+    "degisim_ort": 0,
+    "kayip": [
+     {
+      "dusen_pay": 0.0492,
+      "kacan_pay": 0.4792
+     },
+     {
+      "dusen_pay": 0.049,
+      "kacan_pay": 0.0634
+     }
+    ]
+   },
+   "bcd0_o50": {
+    "kosu": 300,
+    "olcu": "kazanan",
+    "p5": 1,
+    "p50": 1,
+    "p95": 1,
+    "ort": 1,
+    "sansur": 0,
+    "sansur_not": null,
+    "kazanma_payi_taraf0": 0.003,
+    "kazanma_payi_taraf1": 0.997,
+    "sure_p50": 942.9,
+    "degisim_ort": 0,
+    "kayip": [
+     {
+      "dusen_pay": 0.0265,
+      "kacan_pay": 0.5138
+     },
+     {
+      "dusen_pay": 0.0262,
+      "kacan_pay": 0.0031
+     }
+    ]
+   },
+   "tt300_o10": {
+    "kosu": 300,
+    "olcu": "kazanan",
+    "p5": 0,
+    "p50": 1,
+    "p95": 1,
+    "ort": 0.7,
+    "sansur": 0,
+    "sansur_not": null,
+    "kazanma_payi_taraf0": 0.267,
+    "kazanma_payi_taraf1": 0.733,
+    "sure_p50": 2986.9,
+    "degisim_ort": 0,
+    "kayip": [
+     {
+      "dusen_pay": 0.061,
+      "kacan_pay": 0.3937
+     },
+     {
+      "dusen_pay": 0.061,
+      "kacan_pay": 0.1941
+     }
+    ]
+   },
+   "tt300_o25": {
+    "kosu": 300,
+    "olcu": "kazanan",
+    "p5": 1,
+    "p50": 1,
+    "p95": 1,
+    "ort": 1,
+    "sansur": 0,
+    "sansur_not": null,
+    "kazanma_payi_taraf0": 0.04,
+    "kazanma_payi_taraf1": 0.96,
+    "sure_p50": 2302.8,
+    "degisim_ort": 0,
+    "kayip": [
+     {
+      "dusen_pay": 0.0496,
+      "kacan_pay": 0.4817
+     },
+     {
+      "dusen_pay": 0.049,
+      "kacan_pay": 0.0586
+     }
+    ]
+   },
+   "tt300_o50": {
+    "kosu": 300,
+    "olcu": "kazanan",
+    "p5": 1,
+    "p50": 1,
+    "p95": 1,
+    "ort": 1,
+    "sansur": 0,
+    "sansur_not": null,
+    "kazanma_payi_taraf0": 0,
+    "kazanma_payi_taraf1": 1,
+    "sure_p50": 702,
+    "degisim_ort": 0,
+    "kayip": [
+     {
+      "dusen_pay": 0.0254,
+      "kacan_pay": 0.5116
+     },
+     {
+      "dusen_pay": 0.0259,
+      "kacan_pay": 0.0054
+     }
+    ]
+   }
+  },
+  "duyarlilik": null,
+  "hiz": {
+   "kosu": 13200,
+   "ms_kosu_p50": 1455.6,
+   "ms_kosu_p95": 3390,
+   "toplam_s": 2611.7,
+   "ajan_adim_s": 133271260,
+   "makine": "Apple M3"
+  },
+  "kahraman": {}
+ }
+}

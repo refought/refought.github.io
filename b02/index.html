@@ -1,0 +1,80 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Refought · The Phalanx Had One Rule: Don&#x27;t Run. We Broke It 20,000 Times. · Sources</title>
+<style>
+:root{--bg:#f5f4f1;--fg:#1d1f22;--soluk:#5b5f66;--cizgi:#d9d6cf;--vurgu:#9a6b1f}
+@media (prefers-color-scheme:dark){:root{--bg:#16181b;--fg:#e6e3dc;--soluk:#9a9ea6;--cizgi:#2c2f34;--vurgu:#d6a650}}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Inter,sans-serif}
+main{max-width:720px;margin:0 auto;padding:40px max(16px,env(safe-area-inset-left)) 80px}
+h1{font-size:1.6rem;line-height:1.25;margin:0 0 4px;text-wrap:balance} .ust{color:var(--soluk);margin:0 0 32px}
+h2{font-size:.8rem;letter-spacing:.08em;color:var(--vurgu);margin:36px 0 8px;border-top:1px solid var(--cizgi);padding-top:20px}
+li{margin:4px 0} .bolum{margin:2px 0;font-variant-numeric:tabular-nums} a{color:var(--vurgu)}
+code{font-size:.9em}
+</style></head><body><main>
+<h1>The Phalanx Had One Rule: Don&#x27;t Run. We Broke It 20,000 Times.</h1>
+<p class="ust">Refought · sources, parameters and the full run log for this episode</p>
+<p>Thucydides says fear pushed each man behind the next man&#x27;s shield. If each needs the next to stay, how many can run before the line loses?</p>
+<p>We built two identical hoplite lines on a table, 1,152 pieces a side, and told a few men on one side to run one minute in. That rule was broken in 20,797 battles.</p>
+<h2>WHAT WE DID</h2>
+<p>Thucydides (5.71.1, on Mantinea, 418 BC) says lines drifted right out of fear: each man shelters his unshielded side behind the shield of the man on his right. That each man then depends on the next one staying is our inference. &quot;One rule&quot; is our phrase.</p>
+<p>Our table is an agent-based model: every soldier is a piece. A piece&#x27;s nerve drops as men in his 144-man block fall or run; when it drops far enough, he runs. A side is beaten when half its men have fallen or fled. Our rule: N men on one side run 60 seconds after first contact, whatever their nerve.</p>
+<p>WHAT CAME OUT (on our table, not at Mantinea or Delium)</p>
+<ul>
+<li>Nobody told to run: ivory, the side that later gets the runners, wins 493 of 1,000 (95% range 46.2 to 52.4%). It&#x27;s our check, not our finding.</li>
+<li>1 runner: 462. At the bar set before the run, we can&#x27;t tell that from 493 (gap -3.1 points, 99% range -8.9 to +2.7).</li>
+<li>5 runners, 0.4% of the line: 370 (34.1 to 40.0%).</li>
+<li>10 runners: 275 (24.8 to 30.3%).</li>
+<li>25 runners, 2.2%: 63 (5.0 to 8.0%).</li>
+<li>50 runners: 1. 100 runners: 0.</li>
+<li>Somewhere between 10 and 25 of 1,152, an even fight was cut to one win in four, or less.</li>
+<li>The same 25 men falling instead of running, 300 battles: same winner in 300 of 300. A check on how the table is built, not a finding.</li>
+<li>12 other settings, 300 battles each: more early runners meant fewer wins on 12 of 12. With 25 runners ivory won about 1 to 10% of battles. On 8 of 12, 10 runners already cut it to one in four or less. With a side beaten at 60%, up to 4.3% of battles were undecided after 3 hours; our limit was 2%.</li>
+<li>25 runners from the back half only: 3.9% won against 6.3% (-2.4 points, range -4.3 to -0.5).</li>
+</ul>
+<h2>CHAPTERS</h2>
+<p class="bolum">0:00 A line that drifts to the right</p>
+<p class="bolum">0:33 The table: twin lines, and fear</p>
+<p class="bolum">2:04 The check: nobody is told to run</p>
+<p class="bolum">2:33 Break the rule: one man</p>
+<p class="bolum">3:28 Five men, then ten</p>
+<p class="bolum">4:02 Twenty-five men</p>
+<p class="bolum">4:38 Why do so few cost so much?</p>
+<p class="bolum">5:30 We try to break our own answer</p>
+<p class="bolum">5:58 What our table can&#x27;t know</p>
+<p class="bolum">6:08 The man who stayed</p>
+<p class="bolum">7:01 Delium, 424 BC: how a line broke</p>
+<p class="bolum">8:05 Was Laches right?</p>
+<h2>WHAT OUR TABLE CAN&#x27;T KNOW</h2>
+<ol>
+<li>How fast fear spread along a real line. It is our guess, and where the curve falls depends on it.</li>
+<li>In the model, a man who runs counts the same as a man who falls. That is our assumption, not a finding. He also counts straight toward the 50% that beats a side. Our count measures absence, not cowardice.</li>
+<li>Nobody chases a beaten man here. Whether a runner lived, the table can&#x27;t say.</li>
+<li>Our pieces have no shields to cover a neighbour.</li>
+<li>Settings come from our Roman-era estimates. One line length. Two equal armies; unequal ones not tested. Battle length too.</li>
+<li>8 ranks deep is from Thucydides (4.94.1). The spacing (0.9 m) and the 144-man block are ours.</li>
+<li>We found no ancient text that blames a defeat on a few early runners. The accounts we read speak of wings and contingents.</li>
+<li>The battle we follow is one battle, chosen for the story, not a count.</li>
+<li>Our table can&#x27;t refight Delium. Plato wrote the Laches decades later.</li>
+</ol>
+<h2>METHOD</h2>
+<p>Plan v1.1, engine 2572cba. 25,400 battles: 11 rule sets x 1,000, and 48 x 300 for the other settings and the falling check. Written down and locked before the run: what we measure, how many battles, the dice seeds, the bars for each verdict. Pursuit was dropped before the lock: we could not make it match the losses in the sources. Nothing in the model changed after the lock. After the run we fixed one analysis script (the falling check tripped on the 25 being labelled fallen, not fled) and reworded the headline: the planned &quot;most of the time&quot; was already true at 5 runners.</p>
+<h2>SOURCES</h2>
+<p>Full list at the link above.</p>
+<ul>
+<li>Thucydides 4.93.4, 4.94.1, 4.96.5-6, 5.71.1 (tr. Crawley).</li>
+<li>Plato, Symposium 221a-c; Laches 181b (tr. Lamb).</li>
+<li>Archilochus fr. 5 West, our paraphrase. Andocides 1.74 (tr. Maidment): loss of citizen rights.</li>
+<li>Also on screen: Xenophon, Constitution of the Spartans 9.1-2; Tyrtaeus fr. 11 West; Polybius 18.29.</li>
+<li>Peter Krentz, &quot;Casualties in Hoplite Battles&quot;, Greek, Roman, and Byzantine Studies 26 (1985), pp. 13-20: in set hoplite battles the losers&#x27; losses were &quot;twice or three times as heavy as those of the winners&quot; (p. 20).</li>
+</ul>
+<h2>VISUALS</h2>
+<p>Cinematic scenes are AI-generated reconstructions, labelled &quot;reconstruction&quot; on screen. The table is our own model. The 3D scenes are built by us, some from positions on the table, and carry the same label. Table shots marked &quot;illustration&quot; show a rule, not a recorded battle.</p>
+<p>What number did you pick? And which rule should we break next?</p>
+<h2>FILES</h2>
+<p>Every battle we ran for this episode, one row each. Columns: setting, dice seed, winner, battle length and timings in seconds of battle time,
+men fallen and fled per side, and how the marked piece (the brass base: ivory line, third rank) ended. Setting names (n0, o25, olum25 …) are those of our run plans. The parameter files are the locked run plans as written before the run (field names in Turkish, our working language).</p>
+<ul>
+<li><a href="runs-main.csv">runs-main.csv</a> · Early runners 0 to 100, 11 x 1,000 battles (11,000 rows) · <a href="runs-main-parameters.json">parameters</a></li>
+<li><a href="runs-checks.csv">runs-checks.csv</a> · Robustness settings and the falling-instead-of-running check, 44 x 300 battles (13,200 rows) · <a href="runs-checks-parameters.json">parameters</a></li>
+<li><a href="runs-checks-2.csv">runs-checks-2.csv</a> · Ranks 1.8 m apart, 4 x 300 battles (1,200 rows) · <a href="runs-checks-2-parameters.json">parameters</a></li>
+</ul>
+</main></body></html>
